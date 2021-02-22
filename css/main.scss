@@ -1,6 +1,6 @@
 $colors: (
         primary: #0008FF,
-        secondary:  #7145FF,
+        secondary:  #0006cc,
         white-text: whitesmoke
     );
 
@@ -14,7 +14,7 @@ body {
     margin: 0;
 
     #fondo {
-            clip-path: polygon(50% 0%, 90% 0, 79% 100%, 0 100%, 0 0);
+            clip-path: polygon(50% 0%, 75% 0, 59% 100%, 0 100%, 0 0);
             background-color: map-get($colors,primary );
             width: 100%;
             height: 100%;
@@ -24,17 +24,52 @@ body {
 }
 
 header {
-    width: 1427px;
-    display: flex;
-    background-color: map-get($colors, secondary );
-    color: map-get($colors, white-text );
-    #botonera ul {
-        display: inline-block;
-        list-style-type: none;
-    }
-   
+        width: 1188px;
+        display: flex;
+        flex-direction: row;
+        background-color: map-get($colors, secondary );
+        color: map-get($colors, white-text );
+        
+        h1{
+            margin-left: 5px;
+        }    
+
+       
+        #botonera { 
+            width: 320px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+    
+                ul {
+                    list-style-type: none;
+                }
+                
+                li {
+                    display: inline-flex;
+                    margin-left: 25px;
+                    margin-top: 5px;
+                }
+                a {
+                    padding: auto;
+                }
+                a:hover {
+                    background-color: map-get($colors, primary);
+                }
+            }   
 }
 
+#principal{
+        display: flex;
+    
+
+    #tri_1 {
+    clip-path: polygon(0 0, 0 100%, 100% 46%);
+    background-color: orange;
+
+    }
+}
  
 
 
