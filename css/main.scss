@@ -4,14 +4,24 @@ $colors: (
         white-text: whitesmoke
     );
 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
 body, html {
-    height: 100%;
-}
+    height: auto;
+/*     scroll-behavior: smooth;
+ */}
+
+
 
 body {
     
     font-family: 'Montserrat', sans-serif;    
-    margin: 0;
+    
 
     #fondo {
             clip-path: polygon(50% 0%, 75% 0, 59% 100%, 0 100%, 0 0);
@@ -23,57 +33,72 @@ body {
     }
 }
 
-header {
-        width: 1188px;
+header, footer {
+        width: 74.3vw;
         display: flex;
         flex-direction: row;
         background-color: map-get($colors, secondary );
         color: map-get($colors, white-text );
-        
-        h1{
-            margin-left: 5px;
-        }    
+        h1 {margin-left: 5px;margin-top: 5px;}    
 
-       
         #botonera { 
-            width: 320px;
+            width: 450px;
+            margin-left: 40%;
             display: flex;
-            justify-content: space-around;
             align-items: center;
             font-weight: bold;
+            text-transform: uppercase;
     
-                ul {
-                    list-style-type: none;
-                }
+                ul {list-style-type: none;}
                 
                 li {
                     display: inline-flex;
                     margin-left: 25px;
-                    margin-top: 5px;
+                    margin-top: 15px;
+                    
                 }
-                a {
-                    padding: auto;
+                a {padding: 5px;
                 }
+                
                 a:hover {
+                    padding: 5px;
                     background-color: map-get($colors, primary);
                 }
             }   
 }
 
-#principal{
-        display: flex;
-    
+section { 
+     
+    .container {
+        border: yellowgreen solid;
+        height: 100vh;
+    }
+
+    #principal {
+        height: 500px;
+        
+        #container_formas { 
+        background-color: yellowgreen;
+    }
 
     #tri_1 {
     clip-path: polygon(0 0, 0 100%, 100% 46%);
     background-color: orange;
 
     }
-}
+    }
  
+}
+
+#trabajos {
+    background-color: #fff;
+    height: 100vh;
 
 
 
+
+
+}
 
 
 

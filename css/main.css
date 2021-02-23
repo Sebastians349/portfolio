@@ -1,10 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body, html {
-  height: 100%;
+  height: auto;
+  /*     scroll-behavior: smooth;
+ */
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
 }
 
 body #fondo {
@@ -17,8 +25,8 @@ body #fondo {
   z-index: -1;
 }
 
-header {
-  width: 1188px;
+header, footer {
+  width: 74.3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,52 +38,66 @@ header {
   color: whitesmoke;
 }
 
-header h1 {
+header h1, footer h1 {
   margin-left: 5px;
+  margin-top: 5px;
 }
 
-header #botonera {
-  width: 320px;
+header #botonera, footer #botonera {
+  width: 450px;
+  margin-left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-header #botonera ul {
+header #botonera ul, footer #botonera ul {
   list-style-type: none;
 }
 
-header #botonera li {
+header #botonera li, footer #botonera li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 25px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
-header #botonera a {
-  padding: auto;
+header #botonera a, footer #botonera a {
+  padding: 5px;
 }
 
-header #botonera a:hover {
+header #botonera a:hover, footer #botonera a:hover {
+  padding: 5px;
   background-color: #0008FF;
 }
 
-#principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+section .container {
+  border: yellowgreen solid;
+  height: 100vh;
 }
 
-#principal #tri_1 {
+section #principal {
+  height: 500px;
+}
+
+section #principal #container_formas {
+  background-color: yellowgreen;
+}
+
+section #principal #tri_1 {
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 46%);
           clip-path: polygon(0 0, 0 100%, 100% 46%);
   background-color: orange;
+}
+
+#trabajos {
+  background-color: #fff;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
