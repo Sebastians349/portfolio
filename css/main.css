@@ -6,6 +6,7 @@
 }
 
 body, html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -24,8 +25,6 @@ body #fondo {
 }
 
 header, footer {
-  width: 74.3vw;
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +32,6 @@ header, footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #0006cc;
   color: whitesmoke;
 }
 
@@ -43,8 +41,8 @@ header h1, footer h1 {
 }
 
 header #botonera, footer #botonera {
-  width: 450px;
-  margin-left: 40%;
+  width: 550px;
+  margin-left: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,20 +58,18 @@ header #botonera ul, footer #botonera ul {
 }
 
 header #botonera li, footer #botonera li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   margin-left: 25px;
   margin-top: 10px;
 }
 
 header #botonera a, footer #botonera a {
-  padding: 5px;
+  padding: 15px;
 }
 
 header #botonera a:hover, footer #botonera a:hover {
-  padding: 5px;
-  background-color: #0008FF;
+  padding: 15px;
+  background-color: #0006cc;
 }
 
 .container {
@@ -82,11 +78,10 @@ header #botonera a:hover, footer #botonera a:hover {
 }
 
 #principal {
-  height: 1200px;
+  height: 1000px;
 }
 
 #principal #container_formas {
-  position: relative;
   height: 350px;
   width: 350px;
   background-color: yellowgreen;
