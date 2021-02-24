@@ -6,9 +6,7 @@
 }
 
 body, html {
-  height: auto;
-  /*     scroll-behavior: smooth;
- */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,13 +18,14 @@ body #fondo {
           clip-path: polygon(50% 0%, 75% 0, 59% 100%, 0 100%, 0 0);
   background-color: #0008FF;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   z-index: -1;
 }
 
 header, footer {
   width: 74.3vw;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +64,7 @@ header #botonera li, footer #botonera li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 25px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 header #botonera a, footer #botonera a {
@@ -77,22 +76,26 @@ header #botonera a:hover, footer #botonera a:hover {
   background-color: #0008FF;
 }
 
-section .container {
+.container {
   border: yellowgreen solid;
   height: 100vh;
 }
 
-section #principal {
-  height: 500px;
+#principal {
+  height: 1200px;
 }
 
-section #principal #container_formas {
+#principal #container_formas {
+  position: relative;
+  height: 350px;
+  width: 350px;
   background-color: yellowgreen;
+  float: left;
 }
 
-section #principal #tri_1 {
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 46%);
-          clip-path: polygon(0 0, 0 100%, 100% 46%);
+#principal #tri_1 {
+  -webkit-clip-path: polygon(0 0, 0 100%, 40% 50%);
+          clip-path: polygon(0 0, 0 100%, 40% 50%);
   background-color: orange;
 }
 
