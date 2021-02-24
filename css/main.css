@@ -75,17 +75,17 @@ header #botonera a:hover, footer #botonera a:hover {
   background-color: #0006cc;
 }
 
-header #caja_theme, footer #caja_theme {
+header #theme, footer #theme {
+  height: auto;
   border: solid black 1px;
   color: #000;
-  margin: 15px;
   padding: 15px;
 }
 
-header #caja_idioma, footer #caja_idioma {
+header #idioma, footer #idioma {
+  height: auto;
   border: solid black 1px;
   color: #000;
-  margin: 15px;
   padding: 15px;
 }
 
@@ -96,7 +96,8 @@ header #caja_idioma, footer #caja_idioma {
 
 #principal h2 {
   color: whitesmoke;
-  margin: 15px;
+  margin-left: 15px;
+  margin-top: 12%;
   font-size: 5rem;
   font-weight: bolder;
   float: left;
@@ -105,14 +106,34 @@ header #caja_idioma, footer #caja_idioma {
 #principal #container_formas {
   float: right;
   margin-right: 65px;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   background-color: orangered;
 }
 
 #principal #tri_1 {
-  -webkit-clip-path: polygon(0 0, 0 100%, 40% 50%);
-          clip-path: polygon(0 0, 0 100%, 40% 50%);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  background-color: #0008FF;
+}
+
+#principal #tri_2 {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  background-color: orange;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#principal #tri_3 {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  background-color: orange;
+}
+
+#principal #tri_4 {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
   background-color: orange;
 }
 

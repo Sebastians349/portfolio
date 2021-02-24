@@ -80,26 +80,24 @@ header, footer {
                 }
             }  
             
-            #caja_theme{
+            #theme{
+                height: auto;
                 border: solid black 1px;
                 color: #000;
-                margin: $margin;
-                padding: $padding;
+                padding:$padding;
+               
             }
 
-            #caja_idioma{
+            #idioma{
+                height: auto;
                 border: solid black 1px;
                 color: #000;
-                margin: $margin;
-                padding: $padding;
+                padding:$padding;
             }
 
 
 
 }
-
-
-    
 
     #principal {
         height: 1000px;
@@ -107,7 +105,8 @@ header, footer {
 
             h2 { 
                 color: map-get($colors, text);
-                margin: $margin;
+                margin-left: $margin;
+                margin-top: 12%;
                 font-size: 5rem;
                 font-weight: bolder;
                 float: left;    
@@ -117,14 +116,30 @@ header, footer {
             #container_formas {
                float: right;
                margin-right: 65px;
-               height: 350px;
-               width: 350px;
+               height: 250px;
+               width: 250px;
                background-color: orangered;
             }
 
             #tri_1 {
-            clip-path: polygon(0 0, 0 100%, 40% 50%);
-            background-color: orange;
+                clip-path: polygon(0 0, 0% 100%, 100% 50%);
+                background-color:map-get($colors, primary );
+
+            }
+            #tri_2 {
+                clip-path: polygon(0 0, 0% 100%, 100% 50%);
+                background-color: orange;
+                transform: translateY(-50%);
+
+            }
+            #tri_3 {
+                clip-path: polygon(0 0, 0% 100%, 100% 50%);
+                background-color: orange;
+
+            }
+            #tri_4 {
+                clip-path: polygon(0 0, 0% 100%, 100% 50%);
+                background-color: orange;
 
             }
             }
