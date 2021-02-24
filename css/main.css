@@ -32,12 +32,15 @@ header, footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: whitesmoke;
 }
 
 header h1, footer h1 {
-  margin-left: 5px;
-  margin-top: 5px;
+  margin: 15px;
+}
+
+header a, footer a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 header #botonera, footer #botonera {
@@ -72,26 +75,50 @@ header #botonera a:hover, footer #botonera a:hover {
   background-color: #0006cc;
 }
 
-.container {
-  border: yellowgreen solid;
-  height: 100vh;
+header #caja_theme, footer #caja_theme {
+  border: solid black 1px;
+  color: #000;
+  margin: 15px;
+  padding: 15px;
+}
+
+header #caja_idioma, footer #caja_idioma {
+  border: solid black 1px;
+  color: #000;
+  margin: 15px;
+  padding: 15px;
 }
 
 #principal {
   height: 1000px;
+  margin-top: 100px;
+}
+
+#principal h2 {
+  color: whitesmoke;
+  margin: 15px;
+  font-size: 5rem;
+  font-weight: bolder;
+  float: left;
 }
 
 #principal #container_formas {
+  float: right;
+  margin-right: 65px;
   height: 350px;
   width: 350px;
-  background-color: yellowgreen;
-  float: left;
+  background-color: orangered;
 }
 
 #principal #tri_1 {
   -webkit-clip-path: polygon(0 0, 0 100%, 40% 50%);
           clip-path: polygon(0 0, 0 100%, 40% 50%);
   background-color: orange;
+}
+
+.container {
+  border: black solid 1px;
+  height: 100vh;
 }
 
 #trabajos {

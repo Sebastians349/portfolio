@@ -1,7 +1,7 @@
 $colors: (
         primary: #0008FF,
         secondary:  #0006cc,
-        white-text: whitesmoke
+        text: whitesmoke
         /* accent: 
         shade-1:
         shade-2:
@@ -48,8 +48,11 @@ body {
 header, footer {
         display: flex;
         flex-direction: row;
-        color: map-get($colors, white-text );
-        h1 {margin-left: 5px;margin-top: 5px;}    
+        h1 {margin: $margin;}  
+        a 
+        {  color: map-get($colors, text );
+            text-decoration: none;
+        }  
 
         #botonera { 
             width: 550px;
@@ -65,32 +68,58 @@ header, footer {
                     margin-left: 25px;
                     margin-top: 10px;
                     
+                    
                 }
                 a {padding: $padding;
+                    
                 }
                 
                 a:hover {
                     padding: $padding;
                     background-color: map-get($colors, secondary);
                 }
-            }   
+            }  
+            
+            #caja_theme{
+                border: solid black 1px;
+                color: #000;
+                margin: $margin;
+                padding: $padding;
+            }
+
+            #caja_idioma{
+                border: solid black 1px;
+                color: #000;
+                margin: $margin;
+                padding: $padding;
+            }
+
+
+
 }
 
 
-    .container {
-        border: yellowgreen solid;
-        height: 100vh;
-    }
+    
 
     #principal {
         height: 1000px;
+        margin-top: 100px;
+
+            h2 { 
+                color: map-get($colors, text);
+                margin: $margin;
+                font-size: 5rem;
+                font-weight: bolder;
+                float: left;    
+
+            }
         
-            #container_formas { 
-               
+            #container_formas {
+               float: right;
+               margin-right: 65px;
                height: 350px;
                width: 350px;
-               background-color: yellowgreen;
-               float: left;
+               background-color: orangered;
             }
 
             #tri_1 {
@@ -100,7 +129,10 @@ header, footer {
             }
             }
         
-
+        .container {
+                border: black solid 1px;
+                height: 100vh;
+            }
 
 #trabajos {
     background-color: #fff;
