@@ -5,26 +5,28 @@
           box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body #fondo {
   -webkit-clip-path: polygon(50% 0%, 75% 0, 59% 100%, 0 100%, 0 0);
           clip-path: polygon(50% 0%, 75% 0, 59% 100%, 0 100%, 0 0);
-  background-color: #0008FF;
+  background-color: #0008ff;
   width: 100%;
   height: 100vh;
   position: absolute;
   z-index: -1;
 }
 
-header, footer {
+header,
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,16 +36,19 @@ header, footer {
           flex-direction: row;
 }
 
-header h1, footer h1 {
+header h1,
+footer h1 {
   margin: 15px;
 }
 
-header a, footer a {
+header a,
+footer a {
   color: whitesmoke;
   text-decoration: none;
 }
 
-header #botonera, footer #botonera {
+header #botonera,
+footer #botonera {
   width: 550px;
   margin-left: 35%;
   display: -webkit-box;
@@ -56,33 +61,39 @@ header #botonera, footer #botonera {
   text-transform: uppercase;
 }
 
-header #botonera ul, footer #botonera ul {
+header #botonera ul,
+footer #botonera ul {
   list-style-type: none;
 }
 
-header #botonera li, footer #botonera li {
+header #botonera li,
+footer #botonera li {
   display: inline;
   margin-left: 25px;
   margin-top: 10px;
 }
 
-header #botonera a, footer #botonera a {
+header #botonera a,
+footer #botonera a {
   padding: 15px;
 }
 
-header #botonera a:hover, footer #botonera a:hover {
+header #botonera a:hover,
+footer #botonera a:hover {
   padding: 15px;
   background-color: #0006cc;
 }
 
-header #theme, footer #theme {
+header #theme,
+footer #theme {
   height: auto;
   border: solid black 1px;
   color: #000;
   padding: 15px;
 }
 
-header #idioma, footer #idioma {
+header #idioma,
+footer #idioma {
   height: auto;
   border: solid black 1px;
   color: #000;
@@ -105,36 +116,45 @@ header #idioma, footer #idioma {
 
 #principal #container_formas {
   float: right;
-  margin-right: 65px;
-  height: 250px;
-  width: 250px;
-  background-color: orangered;
+  margin-right: 2%;
+  margin-top: 2%;
+  height: 350px;
+  width: 350px;
+}
+
+#principal .clase_forma {
+  width: 125px;
+  height: 125px;
+  color: #0008ff;
 }
 
 #principal #tri_1 {
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #0008FF;
+  background-color: #3339ff;
 }
 
 #principal #tri_2 {
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: orange;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  background-color: #0006b3;
+  margin-left: 50px;
+  margin-top: -50px;
 }
 
 #principal #tri_3 {
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: orange;
+  background-color: #4d52ff;
+  margin-top: -50px;
 }
 
 #principal #tri_4 {
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: orange;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  background-color: #000599;
+  margin-left: 50px;
+  margin-top: -50px;
 }
 
 .container {
