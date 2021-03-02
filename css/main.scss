@@ -43,9 +43,12 @@ header,
 footer {
   display: flex;
   flex-direction: row;
+
   h1 {
-    margin: $margin;
+    margin-top: 20px;
+    margin-left: $margin;
   }
+
   a {
     color: map-get($colors, txt);
     text-decoration: none;
@@ -53,7 +56,7 @@ footer {
 
   #botonera {
     width: 550px;
-    margin-left: 20%;
+    margin-left: 23%;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -81,13 +84,55 @@ footer {
     }
   }
 
-  #theme {
-    height: auto;
-    border: solid black 1px;
-    color: #000;
-    padding: $padding;
+  .switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
     margin-left: $margin;
-    margin-top: $margin;
+    margin-top: 20px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    background-color: map-get($colors, tint-1);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+
+  input:checked + .slider {
+    background-color: map-get($colors, shade-2);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
   }
 
   #idioma {
@@ -95,7 +140,7 @@ footer {
     border: solid black 1px;
     color: #000;
     padding: $padding;
-    margin-left: $margin;
+    margin-left: 50px;
     margin-top: $margin;
   }
 }
