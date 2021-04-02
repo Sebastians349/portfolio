@@ -84,10 +84,9 @@ header #botonera a:hover,
 footer #botonera a:hover {
   padding: 15px;
   border-radius: 3px;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
   background-color: #0006cc;
-  color: #ecff5c;
 }
 
 header .switch,

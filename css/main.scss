@@ -78,9 +78,8 @@ footer {
     a:hover {
       padding: $padding;
       border-radius: $br-rad;
-      transition: all ease 0.5s;
+      transition: ease-in-out 0.5s;
       background-color: map-get($colors, secondary);
-      color: map-get($colors, txt-hover);
     }
   }
 
