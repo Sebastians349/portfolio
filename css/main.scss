@@ -10,9 +10,17 @@ $colors: (
   tint-2: #4d52ff,
 );
 
+$colors-dark: (
+  bg: #121212,
+  bg-secondary: #1f1b24,
+  primary: #bb86fc,
+  secondary: #3700b3,
+);
+
 $padding: 15px;
 $margin: 15px;
 $br-rad: 3px;
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +46,18 @@ body {
     z-index: -1;
   }
 }
-
+/* Dark Mode 
+ */
+body.dark-theme {
+  color: whitesmoke;
+  background-color: map-get($colors-dark, bg-secondary);
+  #fondo {
+    background-color: map-get($colors-dark, primary);
+  }
+}
+body.dark-theme a {
+  color: whitesmoke;
+}
 header,
 footer {
   display: flex;

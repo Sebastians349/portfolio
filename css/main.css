@@ -26,6 +26,21 @@ body #fondo {
   z-index: -1;
 }
 
+/* Dark Mode 
+ */
+body.dark-theme {
+  color: whitesmoke;
+  background-color: #1f1b24;
+}
+
+body.dark-theme #fondo {
+  background-color: #bb86fc;
+}
+
+body.dark-theme a {
+  color: whitesmoke;
+}
+
 header,
 footer {
   display: -webkit-box;
