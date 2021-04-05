@@ -24,8 +24,8 @@ a {
   width: 100%;
 } */
 #fondo {
-  -webkit-clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 74% 0);
-          clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 74% 0);
+  -webkit-clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
+          clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
   background-color: #0b173d;
   width: 100%;
   height: 100%;
@@ -34,7 +34,8 @@ a {
 }
 
 .nav__container {
-  background-color: #0b173d;
+  /*   background-color: map-get($colors, shade-1);
+ */
 }
 
 .nav__container a {
@@ -48,11 +49,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5em;
+  padding: 2em;
 }
 
 header .logo {
   font-weight: bold;
+  text-align: justify;
+  color: black;
 }
 
 header ul {
@@ -62,9 +65,14 @@ header ul {
 }
 
 header ul a {
-  color: #000;
+  color: black;
   display: block;
   padding: 0 1em;
+}
+
+header ul a:hover {
+  background-color: #3c4564;
+  border-radius: 3px;
 }
 
 .redes,
@@ -72,72 +80,17 @@ header ul a {
   display: none;
 }
 
-/*  .switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-    margin-left: $margin;
-    margin-top: 20px;
-  }
-
-  .switch input {
-    display: none;
-  }
-
-  .slider {
-    background-color: map-get($colors, tint-1);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s;
-  }
-
-  .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: 0.4s;
-    width: 26px;
-  }
-
-  input:checked + .slider {
-    background-color: map-get($colors, shade-2);
-  }
-
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
-  #idioma {
-    height: auto;
-    border: solid black 1px;
-    color: #000;
-    padding: $padding;
-    margin-left: 50px;
-    margin-top: $margin;
-  } */
-#principal {
+.principal {
   height: 100vh;
   /*   margin-top: 100px;
  */
 }
 
-#principal #container_formas {
+.principal h1 {
+  font-size: 7em;
+}
+
+.principal #container_formas {
   display: none;
   float: right;
   margin-right: 2%;
@@ -146,37 +99,37 @@ header ul a {
   width: 350px;
 }
 
-#principal .clase_forma {
+.principal .clase_forma {
   width: 125px;
   height: 125px;
   color: #0b173d;
 }
 
-#principal #tri_1 {
+.principal #tri_1 {
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #3339ff;
+  background-color: #232e50;
 }
 
-#principal #tri_2 {
+.principal #tri_2 {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
           clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  background-color: #0006b3;
+  background-color: #091231;
   margin-left: 50px;
   margin-top: -50px;
 }
 
-#principal #tri_3 {
+.principal #tri_3 {
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #4d52ff;
+  background-color: #3c4564;
   margin-top: -50px;
 }
 
-#principal #tri_4 {
+.principal #tri_4 {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
           clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  background-color: #000599;
+  background-color: #0a1537;
   margin-left: 50px;
   margin-top: -50px;
 }
@@ -190,5 +143,58 @@ header ul a {
 #trabajos {
   background-color: #fff;
   height: 100vh;
+}
+
+@media only screen and (min-width: 1050px) {
+  .principal {
+    height: 90vh;
+  }
+  .nav__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav__container .botonera a {
+    color: black;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .redes {
+    padding: 2em 4em 2em 0;
+  }
+  .redes {
+    display: block;
+  }
+  .redes ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1250) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .redes {
+    padding: 2em 10em 2em 0;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 0.5em 2em 2em;
+  }
+  .redes {
+    padding: 2em 6em 2em 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
