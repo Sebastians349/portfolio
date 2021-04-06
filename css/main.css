@@ -33,13 +33,16 @@ a {
   z-index: -1;
 }
 
-.nav__container {
-  /*   background-color: map-get($colors, shade-1);
- */
+.nav__container .redes a {
+  color: #00f7ff;
+  padding: 0 0.5em;
 }
 
-.nav__container a {
-  color: #00f7ff;
+.nav__container .redes a:hover {
+  background-color: #0a1537;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  border-radius: 0.5em;
 }
 
 header {
@@ -67,12 +70,14 @@ header ul {
 header ul a {
   color: black;
   display: block;
-  padding: 0 1em;
+  padding: 0 1.25em;
 }
 
 header ul a:hover {
-  background-color: #3c4564;
+  background-color: #a3b6c8;
   border-radius: 3px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 .redes,
@@ -87,7 +92,8 @@ header ul a:hover {
 }
 
 .principal h1 {
-  font-size: 7em;
+  font-size: 5em;
+  padding: 1em 1em;
 }
 
 .principal #container_formas {

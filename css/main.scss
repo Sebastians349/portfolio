@@ -47,10 +47,16 @@ a {
 }
 
 .nav__container {
-  /*   background-color: map-get($colors, shade-1);
- */
-  a {
-    color: map-get($colors, blanco);
+  .redes {
+    a {
+      color: map-get($colors, blanco);
+      padding: 0 0.5em;
+    }
+    a:hover {
+      background-color: map-get($colors, shade-2);
+      filter: invert(1);
+      border-radius: 0.5em;
+    }
   }
 }
 header {
@@ -70,12 +76,13 @@ header {
     a {
       color: black;
       display: block;
-      padding: 0 1em;
+      padding: 0 1.25em;
     }
 
     a:hover {
-      background-color: map-get($colors, tint-2);
+      background-color: map-get($colors, txt-hover);
       border-radius: 3px;
+      transition: all ease-in-out 0.5s;
     }
   }
 }
@@ -90,7 +97,8 @@ header {
   /*   margin-top: 100px;
  */
   h1 {
-    font-size: 7em;
+    font-size: 5em;
+    padding: 1em 1em;
   }
 
   #container_formas {
