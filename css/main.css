@@ -93,8 +93,8 @@ header ul a:hover {
 }
 
 .principal h1 {
-  font-size: 5em;
-  padding: 1em 0.4em;
+  font-size: 4em;
+  padding: 0em 0.4em;
 }
 
 .principal #container_formas {
@@ -156,9 +156,6 @@ header ul a:hover {
   #fondo {
     display: block;
   }
-  .principal {
-    height: 90vh;
-  }
   .nav__container {
     display: -ms-grid;
     display: grid;
@@ -187,6 +184,13 @@ header ul a:hover {
             justify-content: space-between;
     width: 7em;
     float: right;
+  }
+  .principal {
+    height: 90vh;
+  }
+  .principal h1 {
+    font-size: 5em;
+    padding: 1em 0.4em;
   }
 }
 
