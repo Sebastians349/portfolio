@@ -81,7 +81,8 @@ header ul a:hover {
 }
 
 .redes,
-.logo_hero {
+.logo_hero,
+#fondo {
   display: none;
 }
 
@@ -93,7 +94,7 @@ header ul a:hover {
 
 .principal h1 {
   font-size: 5em;
-  padding: 1em 1em;
+  padding: 1em 0.4em;
 }
 
 .principal #container_formas {
@@ -152,6 +153,9 @@ header ul a:hover {
 }
 
 @media only screen and (min-width: 1050px) {
+  #fondo {
+    display: block;
+  }
   .principal {
     height: 90vh;
   }
