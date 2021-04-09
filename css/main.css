@@ -107,37 +107,42 @@ header ul a:hover {
 }
 
 .principal .clase_forma {
-  width: 125px;
-  height: 125px;
-  color: #0b173d;
+  width: 100px;
+  height: 100px;
+}
+
+.principal .marco {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 6%, 95% 6%, 95% 95%, 1% 95%, 4% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 6%, 95% 6%, 95% 95%, 1% 95%, 4% 100%, 100% 100%, 100% 0%);
+  background-color: #ffd23d;
 }
 
 .principal #tri_1 {
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #232e50;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #ffd23d;
 }
 
 .principal #tri_2 {
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  background-color: #091231;
-  margin-left: 50px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #ffd23d;
+  margin-left: 100px;
   margin-top: -50px;
 }
 
 .principal #tri_3 {
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  background-color: #3c4564;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #ffd23d;
   margin-top: -50px;
 }
 
 .principal #tri_4 {
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  background-color: #0a1537;
-  margin-left: 50px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #ffd23d;
+  margin-left: 100px;
   margin-top: -50px;
 }
 
@@ -174,6 +179,7 @@ header ul a:hover {
   }
   .redes {
     display: block;
+    float: right;
   }
   .redes ul {
     display: -webkit-box;
@@ -191,6 +197,13 @@ header ul a:hover {
   .principal h1 {
     font-size: 5em;
     padding: 1em 0.4em;
+  }
+  .principal .logo_hero {
+    display: block;
+    float: right;
+    margin-right: 2%;
+    height: 350px;
+    width: 350px;
   }
 }
 

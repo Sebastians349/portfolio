@@ -111,30 +111,44 @@ header {
     width: 350px;
   }
   .clase_forma {
-    width: 125px;
-    height: 125px;
-    color: map-get($colors, primary);
+    width: 100px;
+    height: 100px;
+  }
+  .marco {
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      5% 100%,
+      5% 6%,
+      95% 6%,
+      95% 95%,
+      1% 95%,
+      4% 100%,
+      100% 100%,
+      100% 0%
+    );
+    background-color: map-get($colors, accent);
   }
 
   #tri_1 {
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    background-color: map-get($colors, tint-1);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
   }
   #tri_2 {
-    clip-path: polygon(100% 0, 0 50%, 100% 100%);
-    background-color: map-get($colors, shade-1);
-    margin-left: 50px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+    margin-left: 100px;
     margin-top: -50px;
   }
   #tri_3 {
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    background-color: map-get($colors, tint-2);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
     margin-top: -50px;
   }
   #tri_4 {
-    clip-path: polygon(100% 0, 0 50%, 100% 100%);
-    background-color: map-get($colors, shade-2);
-    margin-left: 50px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+    margin-left: 100px;
     margin-top: -50px;
   }
 }
@@ -149,7 +163,7 @@ header {
   background-color: #fff;
   height: 100vh;
 }
-// ///////////////////////////////////////////////
+//////////////////////////// BREAKPOINT  ////////////////////////////
 @media only screen and (min-width: 1050px) {
   #fondo {
     display: block;
@@ -173,6 +187,8 @@ header {
 
   .redes {
     display: block;
+    float: right;
+
     ul {
       display: flex;
       justify-content: space-between;
@@ -188,10 +204,18 @@ header {
       font-size: 5em;
       padding: 1em 0.4em;
     }
+
+    .logo_hero {
+      display: block;
+      float: right;
+      margin-right: 2%;
+      height: 350px;
+      width: 350px;
+    }
   }
 } // ********* fin media 1150px **********
 
-// ///////////////////////////////////////////////
+//////////////////////////// BREAKPOINT  ////////////////////////////
 
 @media only screen and (min-width: 1250) {
   header {
@@ -202,6 +226,7 @@ header {
   }
 }
 // **********fin media 1250px *******
+//////////////////////////// BREAKPOINT  ////////////////////////////
 
 @media only screen and (min-width: 1550px) {
   header {
