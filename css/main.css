@@ -90,55 +90,57 @@ header ul a:hover {
   height: 100vh;
   /*   margin-top: 100px;
  */
+  /* .clase_forma {
+    width: 100px;
+    height: 100px;
+  }
+  .marco {
+    position: relative;
+    z-index: -1;
+    width: 200px;
+    height: 350px;
+    clip-path: polygon(
+      0% 0%,
+      0 100%,
+      3% 100%,
+      3% 3%,
+      97% 3%,
+      97% 97%,
+      0 97%,
+      0 100%,
+      100% 100%,
+      100% 0
+    );
+
+    background-color: map-get($colors, accent);
+  }
+
+  #tri_1 {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+  }
+  #tri_2 {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  #tri_3 {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+    margin-top: -50px;
+  }
+  #tri_4 {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: map-get($colors, accent);
+    margin-left: 100px;
+    margin-top: -50px;
+  } */
 }
 
 .principal h1 {
   font-size: 4em;
   padding: 0em 0.4em;
-}
-
-.principal .clase_forma {
-  width: 100px;
-  height: 100px;
-}
-
-.principal .marco {
-  position: relative;
-  z-index: -1;
-  width: 200px;
-  height: 350px;
-  -webkit-clip-path: polygon(0% 0%, 0 100%, 3% 100%, 3% 3%, 97% 3%, 97% 97%, 0 97%, 0 100%, 100% 100%, 100% 0);
-          clip-path: polygon(0% 0%, 0 100%, 3% 100%, 3% 3%, 97% 3%, 97% 97%, 0 97%, 0 100%, 100% 100%, 100% 0);
-  background-color: #ffd23d;
-}
-
-.principal #tri_1 {
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #ffd23d;
-}
-
-.principal #tri_2 {
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #ffd23d;
-  margin-left: 100px;
-  margin-top: -50px;
-}
-
-.principal #tri_3 {
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #ffd23d;
-  margin-top: -50px;
-}
-
-.principal #tri_4 {
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #ffd23d;
-  margin-left: 100px;
-  margin-top: -50px;
 }
 
 .container {
