@@ -196,8 +196,12 @@ header {
 
   .principal {
     height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    word-wrap: normal;
 
     h1 {
+      float: left;
       font-size: 4em;
       padding: 0.4em 0.4em;
     }

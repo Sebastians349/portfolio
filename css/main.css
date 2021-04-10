@@ -190,8 +190,16 @@ header ul a:hover {
   }
   .principal {
     height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    word-wrap: normal;
   }
   .principal h1 {
+    float: left;
     font-size: 4em;
     padding: 0.4em 0.4em;
   }
