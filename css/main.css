@@ -196,19 +196,14 @@ header ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    place-items: center;
     word-wrap: normal;
   }
   .principal h1 {
-    float: left;
     font-size: 4em;
-    padding: 0.4em 0.4em;
   }
   .principal .logo_hero {
     display: block;
-    float: right;
-    margin-right: 2%;
-    height: 350px;
-    width: 350px;
   }
 }
 

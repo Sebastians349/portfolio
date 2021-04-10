@@ -198,20 +198,15 @@ header {
     height: 90vh;
     display: flex;
     justify-content: space-between;
+    place-items: center;
     word-wrap: normal;
 
     h1 {
-      float: left;
       font-size: 4em;
-      padding: 0.4em 0.4em;
     }
 
     .logo_hero {
       display: block;
-      float: right;
-      margin-right: 2%;
-      height: 350px;
-      width: 350px;
     }
   }
 } // ********* fin media 1150px **********
