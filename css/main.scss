@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
 
 $colors: (
-  primary: #0b173d,
-  secondary: #0008ff,
+  primario: #0b173d,
+  secundario: #0008ff,
   txt__dark: #000,
-  txt-hover: #9da2b1,
+  txt__hover: #9da2b1,
+  background__1: #0b373c,
   blanco: #00f7ff,
   accent: #9dff00,
-  accent-2: #ffd23d,
-  shade-1: #091231,
-  shade-2: #0a1537,
-  tint-1: #232e50,
-  tint-2: #3c4564,
+  accent__2: #ffd23d,
+  shade__1: #091231,
+  shade__2: #0a1537,
+  tinte__1: #232e50,
+  tint__2: #3c4564,
 );
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   scroll-behavior: smooth;
@@ -40,7 +46,7 @@ a {
 
 #fondo {
   clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
-  background-color: map-get($colors, primary);
+  background-color: map-get($colors, primario);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -54,7 +60,7 @@ a {
       padding: 0 0.5em;
     }
     a:hover {
-      background-color: map-get($colors, shade-2);
+      background-color: map-get($colors, shade__2);
       filter: invert(1);
       border-radius: 0.5em;
     }
@@ -81,7 +87,7 @@ header {
     }
 
     a:hover {
-      background-color: map-get($colors, txt-hover);
+      background-color: map-get($colors, txt__hover);
       border-radius: 3px;
       transition: all ease-in-out 0.5s;
     }
@@ -151,16 +157,38 @@ header {
   } */
 }
 
-.container {
-  border: black solid 1px;
-  background-color: skyblue;
-  height: 100vh;
-}
-
-#trabajos {
+#proyectos {
   background-color: #fff;
   height: 100vh;
+  white-space: nowrap;
 }
+.titulo {
+  position: relative;
+  z-index: 1;
+}
+.fondo__proyectos {
+  clip-path: polygon(5% 0, 30% 0, 30% 100%, 5% 100%);
+  background-color: map-get($colors, tint__2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.fondo__herramientas {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  background-color: map-get($colors, background__1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.container__herramientas {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 //////////////////////////// BREAKPOINT  ////////////////////////////
 @media only screen and (min-width: 1050px) {
   #fondo {
