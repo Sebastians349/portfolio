@@ -160,12 +160,8 @@ header {
 #proyectos {
   background-color: #fff;
   height: 100vh;
-  white-space: nowrap;
 }
-.titulo {
-  position: relative;
-  z-index: 1;
-}
+
 .fondo__proyectos {
   clip-path: polygon(5% 0, 30% 0, 30% 100%, 5% 100%);
   background-color: map-get($colors, tint__2);
@@ -173,6 +169,15 @@ header {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+.container__proyectos {
+  .titulo {
+    position: relative;
+    z-index: 1;
+  }
+  .container__txt {
+    float: right;
+  }
 }
 
 .fondo__herramientas {
@@ -187,6 +192,28 @@ header {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
+}
+
+.container__contacto {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container__card {
+    display: flex;
+    border: solid 1px black;
+    align-content: center;
+    width: 30rem;
+    height: 30rem;
+
+    /* .foto__contacto {
+        ;
+      }
+
+      .txt__contacto {
+        
+      } */
+  }
 }
 
 //////////////////////////// BREAKPOINT  ////////////////////////////

@@ -151,12 +151,6 @@ header ul a:hover {
 #proyectos {
   background-color: #fff;
   height: 100vh;
-  white-space: nowrap;
-}
-
-.titulo {
-  position: relative;
-  z-index: 1;
 }
 
 .fondo__proyectos {
@@ -167,6 +161,15 @@ header ul a:hover {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+.container__proyectos .titulo {
+  position: relative;
+  z-index: 1;
+}
+
+.container__proyectos .container__txt {
+  float: right;
 }
 
 .fondo__herramientas {
@@ -187,6 +190,37 @@ header ul a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.container__contacto {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__contacto .container__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px black;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 30rem;
+  height: 30rem;
+  /* .foto__contacto {
+        ;
+      }
+
+      .txt__contacto {
+        
+      } */
 }
 
 @media only screen and (min-width: 1050px) {
