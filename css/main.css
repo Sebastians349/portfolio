@@ -203,24 +203,21 @@ header ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
+  /* .container__card {
+    display: flex;
+    border: solid 1px black;
+    align-content: center;
+    width: 30rem;
+    height: 30rem;
 
-.container__contacto .container__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: solid 1px black;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 30rem;
-  height: 30rem;
-  /* .foto__contacto {
+    /* .foto__contacto {
         ;
       }
 
       .txt__contacto {
         
-      } */
+      }
+    }*/
 }
 
 @media only screen and (min-width: 1050px) {

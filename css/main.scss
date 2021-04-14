@@ -194,12 +194,68 @@ header {
   justify-content: space-evenly;
 }
 
-.container__contacto {
+#contacto {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  .container__card {
+
+  .card {
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 20px hsl(0 0% 0% / 10%);
+  }
+
+  .card__content {
+    padding: 1.5rem;
+  }
+
+  .card h2 {
+    margin-top: 3em;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .card h2 small {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .card p {
+    text-align: justify;
+  }
+
+  .card__media img {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    max-width: 100px;
+    opacity: 1;
+    box-shadow: 3px 3px 20px black;
+    border: 2px solid whitesmoke;
+    z-index: 1;
+    transform: translate(-50%, 0);
+  }
+
+  .button {
+    display: inline-block;
+    background: #8cfbde;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 0.03ch;
+    text-transform: uppercase;
+    border-radius: 0.8em;
+  }
+
+  /* .container__card {
     display: flex;
     border: solid 1px black;
     align-content: center;
@@ -212,8 +268,8 @@ header {
 
       .txt__contacto {
         
-      } */
-  }
+      }
+    }*/
 }
 
 //////////////////////////// BREAKPOINT  ////////////////////////////
