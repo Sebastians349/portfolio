@@ -192,7 +192,7 @@ header ul a:hover {
           justify-content: space-evenly;
 }
 
-.container__contacto {
+#contacto {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +218,64 @@ header ul a:hover {
         
       }
     }*/
+}
+
+#contacto .card {
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+}
+
+#contacto .card__content {
+  padding: 1.5rem;
+}
+
+#contacto .card h2 {
+  margin-top: 3em;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+#contacto .card h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#contacto .card p {
+  text-align: justify;
+}
+
+#contacto .card__media img {
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  -webkit-box-shadow: 3px 3px 20px black;
+          box-shadow: 3px 3px 20px black;
+  border: 2px solid whitesmoke;
+  z-index: 1;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#contacto .button {
+  display: inline-block;
+  background: #8cfbde;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 0.03ch;
+  text-transform: uppercase;
+  border-radius: 0.8em;
 }
 
 @media only screen and (min-width: 1050px) {
