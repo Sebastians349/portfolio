@@ -30,9 +30,6 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  width: 100%;
-} */
 #fondo {
   -webkit-clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
           clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
@@ -45,14 +42,14 @@ a {
 
 .nav__container .redes a {
   color: #00f7ff;
-  padding: 0 0.5em;
+  padding: 0.1em 0.5em;
+  font-size: 1.5rem;
 }
 
 .nav__container .redes a:hover {
-  background-color: #0a1537;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  border-radius: 0.5em;
+  background-color: #00f7ff;
+  color: #091231;
+  border-radius: 4px;
 }
 
 header {
@@ -63,31 +60,33 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
+  font-size: 1rem;
 }
 
 header .logo {
   font-weight: bold;
   text-align: justify;
   color: black;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
 }
 
-header ul {
+header .botonera ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header ul a {
+header .botonera ul a {
   color: black;
   display: block;
-  padding: 0 1.25em;
+  padding: 0.5em 1em;
 }
 
-header ul a:hover {
-  background-color: #9da2b1;
-  border-radius: 3px;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+header .botonera ul a:hover {
+  background-color: #0b173d;
+  color: #fff;
+  border-radius: 4px;
 }
 
 .redes,
@@ -98,8 +97,6 @@ header ul a:hover {
 
 .principal {
   height: 100vh;
-  /*   margin-top: 100px;
- */
 }
 
 .principal h1 {
@@ -211,7 +208,8 @@ header ul a:hover {
 }
 
 #contacto .card p .plan {
-  background-color: #ebebe1;
+  color: #0008ff;
+  background-color: #fff;
 }
 
 #contacto .button {
@@ -236,8 +234,8 @@ header ul a:hover {
   .nav__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 76% auto;
+        grid-template-columns: 76% auto;
     background: unset;
   }
   .nav__container .botonera a {

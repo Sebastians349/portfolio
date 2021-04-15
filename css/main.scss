@@ -44,10 +44,6 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  width: 100%;
-} */
-
 #fondo {
   clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
   background-color: map-get($colors, primary);
@@ -61,39 +57,46 @@ a {
   .redes {
     a {
       color: map-get($colors, white__1);
-      padding: 0 0.5em;
+      padding: 0.1em 0.5em;
+      font-size: 1.5rem;
     }
     a:hover {
-      background-color: map-get($colors, shade__2);
-      filter: invert(1);
-      border-radius: 0.5em;
+      background-color: map-get($colors, white__1);
+      color: #091231;
+      border-radius: 4px;
     }
   }
 }
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 2em;
+  font-size: 1rem;
 
   .logo {
     font-weight: bold;
     text-align: justify;
     color: black;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
   }
 
-  ul {
-    display: flex;
+  .botonera {
+    ul {
+      display: flex;
 
-    a {
-      color: black;
-      display: block;
-      padding: 0 1.25em;
-    }
+      a {
+        color: black;
+        display: block;
+        padding: 0.5em 1em;
+      }
 
-    a:hover {
-      background-color: map-get($colors, txt__hover);
-      border-radius: 3px;
-      transition: all ease-in-out 0.5s;
+      a:hover {
+        background-color: map-get($colors, primary);
+        color: #fff;
+        border-radius: 4px;
+      }
     }
   }
 }
@@ -106,8 +109,7 @@ header {
 
 .principal {
   height: 100vh;
-  /*   margin-top: 100px;
- */
+
   h1 {
     font-size: 4em;
     padding: 0em 0.4em;
@@ -199,7 +201,8 @@ header {
     margin-top: 15px;
     text-align: center;
     .plan {
-      background-color: rgb(235, 235, 225);
+      color: map-get($colors, secondary);
+      background-color: #fff;
     }
   }
 
@@ -229,7 +232,7 @@ header {
 
   .nav__container {
     display: grid;
-    grid-template-columns: 66% auto;
+    grid-template-columns: 76% auto;
     background: unset;
     .botonera a {
       color: black;
