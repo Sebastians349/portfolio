@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
 
 $colors: (
-  primario: #0b173d,
-  secundario: #0008ff,
+  primary: #0b173d,
+  secondary: #0008ff,
   txt__dark: #000,
   txt__hover: #9da2b1,
   background__1: #0b373c,
-  blanco: #00f7ff,
+  white__1: #00f7ff,
   accent: #9dff00,
   accent__2: #ffd23d,
   shade__1: #091231,
   shade__2: #0a1537,
-  tinte__1: #232e50,
-  tinte__2: #3c4564,
+  tint__1: #232e50,
+  tint__2: #3c4564,
 );
 
 * {
@@ -50,7 +50,7 @@ a {
 
 #fondo {
   clip-path: polygon(100% 0, 100% 38%, 100% 100%, 50% 100%, 80% 0);
-  background-color: map-get($colors, primario);
+  background-color: map-get($colors, primary);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -60,7 +60,7 @@ a {
 .nav__container {
   .redes {
     a {
-      color: map-get($colors, blanco);
+      color: map-get($colors, white__1);
       padding: 0 0.5em;
     }
     a:hover {
@@ -121,7 +121,7 @@ header {
 
 .fondo__proyectos {
   clip-path: polygon(5% 0, 30% 0, 30% 100%, 5% 100%);
-  background-color: map-get($colors, tinte__2);
+  background-color: map-get($colors, tint__2);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -158,7 +158,7 @@ header {
   align-items: center;
 
   .card {
-    width: 450px;
+    width: 30rem;
     text-align: center;
     background: #ffffff;
     border-radius: 1em;
@@ -179,7 +179,7 @@ header {
     }
   }
   .card__content {
-    padding: 1.5rem;
+    padding: 2rem;
   }
 
   .card h2 {
@@ -197,7 +197,10 @@ header {
 
   .card p {
     margin-top: 15px;
-    text-align: justify;
+    text-align: center;
+    .plan {
+      background-color: rgb(235, 235, 225);
+    }
   }
 
   .button {
@@ -209,9 +212,9 @@ header {
     text-transform: uppercase;
     border-radius: 0.5em;
     margin-top: 1em;
-    a:hover {
-      transform: translateX(1);
-    }
+  }
+  a:hover {
+    background-color: map-get($colors, secondary);
   }
 }
 

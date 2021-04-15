@@ -165,7 +165,7 @@ header ul a:hover {
 }
 
 #contacto .card {
-  width: 450px;
+  width: 30rem;
   text-align: center;
   background: #ffffff;
   border-radius: 1em;
@@ -189,7 +189,7 @@ header ul a:hover {
 }
 
 #contacto .card__content {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 #contacto .card h2 {
@@ -207,7 +207,11 @@ header ul a:hover {
 
 #contacto .card p {
   margin-top: 15px;
-  text-align: justify;
+  text-align: center;
+}
+
+#contacto .card p .plan {
+  background-color: #ebebe1;
 }
 
 #contacto .button {
@@ -221,9 +225,8 @@ header ul a:hover {
   margin-top: 1em;
 }
 
-#contacto .button a:hover {
-  -webkit-transform: translateX(1);
-          transform: translateX(1);
+#contacto a:hover {
+  background-color: #0008ff;
 }
 
 @media only screen and (min-width: 1050px) {
