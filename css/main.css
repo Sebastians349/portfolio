@@ -229,7 +229,9 @@ header .botonera ul a:hover {
 
 @media only screen and (min-width: 1050px) {
   #fondo {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav__container {
     display: -ms-grid;
@@ -270,13 +272,15 @@ header .botonera ul a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     place-items: center;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   .principal h1 {
     font-size: 4em;
+    margin-left: 2rem;
   }
   .principal .logo_hero {
     display: block;
+    margin-right: -5rem;
   }
 }
 

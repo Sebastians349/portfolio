@@ -227,7 +227,7 @@ header {
 
 @media only screen and (min-width: 1050px) {
   #fondo {
-    display: block;
+    display: flex;
   }
 
   .nav__container {
@@ -263,17 +263,19 @@ header {
     display: flex;
     justify-content: space-between;
     place-items: center;
-    word-wrap: normal;
+    word-wrap: break-word;
 
     h1 {
       font-size: 4em;
+      margin-left: 2rem;
     }
 
     .logo_hero {
       display: block;
+      margin-right: -5rem;
     }
   }
-} // ********* fin media 1150px **********
+} // ///////// fin media 1050px /////////
 
 ////////////////////////////  BREAKPOINT  ////////////////////////////
 
