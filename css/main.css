@@ -133,6 +133,37 @@ header .botonera ul a:hover {
   float: right;
 }
 
+.container__proyectos .container__txt .nombre__web {
+  position: relative;
+  z-index: 1;
+}
+
+.container__proyectos .container__img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.container__proyectos .container__img .img__proyectos {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 10px #161313;
+          box-shadow: 3px 3px 10px #161313;
+}
+
 .fondo__herramientas {
   -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
           clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);

@@ -140,6 +140,25 @@ header {
   }
   .container__txt {
     float: right;
+    .nombre__web {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .container__img {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-content: space-around;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 1;
+    .img__proyectos {
+      width: 250px;
+      border: 1px solid black;
+      border-radius: 3px;
+      box-shadow: 3px 3px 10px rgb(22, 19, 19);
+    }
   }
 }
 
