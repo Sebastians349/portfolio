@@ -95,6 +95,10 @@ header .botonera ul a:hover {
   display: none;
 }
 
+.logo_hero {
+  width: 350px;
+}
+
 .principal {
   height: 100vh;
 }
