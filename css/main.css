@@ -162,12 +162,15 @@ header .botonera ul a:hover {
 }
 
 .container__proyectos .container__txt .titulo__proyecto {
-  padding: 1rem;
+  margin: 1rem 0 0;
+  color: #0008ff;
+  text-transform: uppercase;
 }
 
 .container__proyectos .container__txt .nombre__web {
   position: relative;
   z-index: 1;
+  font-weight: bold;
 }
 
 .container__proyectos .container__txt p {
