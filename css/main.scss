@@ -133,20 +133,29 @@ header {
   position: absolute;
   z-index: 1;
 }
+
+.titulo {
+  display: block;
+  float: left;
+  writing-mode: vertical-rl;
+  padding: 1rem;
+  margin-top: 18rem;
+  margin-left: 3rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: map-get($colors, shade__2);
+  color: whitesmoke;
+  align-self: center;
+}
+
 .container__proyectos {
   height: 100%;
+  width: 80%;
+  margin-left: 5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .titulo {
-    writing-mode: vertical-rl;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 3px;
-    text-transform: uppercase;
-    border: solid 0.5px map-get($colors, tint__2);
-  }
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
 
   .container__txt {
     width: 400px;
@@ -198,6 +207,7 @@ header {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
 }
 
 #contacto {
