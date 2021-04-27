@@ -205,7 +205,7 @@ header .botonera ul a:hover {
           box-shadow: 0px 7px 16px 0px #000000;
 }
 
-.fondo__herramientas {
+#herramientas .fondo__herramientas {
   -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
           clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
   background-color: #0b373c;
@@ -215,7 +215,20 @@ header .botonera ul a:hover {
   z-index: 1;
 }
 
-.container__herramientas {
+#herramientas .titulo__h {
+  display: block;
+  text-align: center;
+  width: 15%;
+  background-color: #3c5f63;
+  color: whitesmoke;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-left: 28rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#herramientas .container__herramientas {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +240,15 @@ header .botonera ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#herramientas .container__herramientas .card__herramientas {
+  position: relative;
+  z-index: 1;
+  width: 20rem;
+  height: 30rem;
+  border: 1px solid grey;
+  border-radius: 6px;
 }
 
 #contacto {
