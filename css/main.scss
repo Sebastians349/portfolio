@@ -7,7 +7,7 @@ $colors: (
   txt__hover: #9da2b1,
   background__1: #0b373c,
   back__shade1: #3c5f63,
-  white__1: #00f7ff,
+  white__1: #fafafa,
   accent: #9dff00,
   accent__2: #ffd23d,
   shade__1: #091231,
@@ -22,7 +22,7 @@ $colors: (
 }
 
 *:hover {
-  transition: all ease 1s;
+  transition: all ease 0.5s;
 }
 
 html {
@@ -33,6 +33,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
+  background-color: #fafafa;
 }
 
 ul {
@@ -122,7 +123,6 @@ header {
 }
 
 #proyectos {
-  background-color: #fff;
   height: 100vh;
 }
 
@@ -189,9 +189,8 @@ header {
     .img__proyectos {
       width: 15rem;
       margin: 2.5rem 0 0 0;
-      border: 1px solid black;
       border-radius: 10px;
-      box-shadow: 0px 7px 16px 0px #000000;
+      box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
     }
   }
 }
@@ -205,18 +204,21 @@ header {
     position: absolute;
     z-index: 1;
   }
-  .titulo__h {
-    display: block;
-    text-align: center;
-    width: 15%;
-    background-color: map-get($colors, back__shade1);
-    color: whitesmoke;
-    border-radius: 3px;
-    padding: 0.5rem;
-    margin-left: 28rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+  .container__titulo {
+    display: flex;
+    justify-content: center;
+    .titulo__h {
+      display: flex;
+      text-align: center;
+      background-color: map-get($colors, back__shade1);
+      color: whitesmoke;
+      border-radius: 3px;
+      padding: 0.5rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
   }
+
   .container__herramientas {
     height: 100vh;
     display: flex;
@@ -227,8 +229,13 @@ header {
       z-index: 1;
       width: 20rem;
       height: 30rem;
-      border: 1px solid grey;
+      margin-top: 7rem;
+      background-color: #fafafa;
       border-radius: 6px;
+      padding: 1rem;
+      text-align: justify;
+      white-space: pre-line;
+      box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
     }
   }
 }
@@ -244,7 +251,7 @@ header {
     text-align: center;
     background: #ffffff;
     border-radius: 1em;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   }
   .card__media {
     img {

@@ -5,8 +5,8 @@
 }
 
 *:hover {
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 html {
@@ -17,6 +17,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
+  background-color: #fafafa;
 }
 
 ul {
@@ -41,13 +42,13 @@ a {
 }
 
 .nav__container .redes a {
-  color: #00f7ff;
+  color: #fafafa;
   padding: 0.1em 0.5em;
   font-size: 1.5rem;
 }
 
 .nav__container .redes a:hover {
-  background-color: #00f7ff;
+  background-color: #fafafa;
   color: #091231;
   border-radius: 4px;
 }
@@ -110,7 +111,6 @@ header .botonera ul a:hover {
 }
 
 #proyectos {
-  background-color: #fff;
   height: 100vh;
 }
 
@@ -199,10 +199,9 @@ header .botonera ul a:hover {
 .container__proyectos .container__img .img__proyectos {
   width: 15rem;
   margin: 2.5rem 0 0 0;
-  border: 1px solid black;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 7px 16px 0px #000000;
-          box-shadow: 0px 7px 16px 0px #000000;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
 #herramientas .fondo__herramientas {
@@ -215,15 +214,24 @@ header .botonera ul a:hover {
   z-index: 1;
 }
 
-#herramientas .titulo__h {
-  display: block;
+#herramientas .container__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#herramientas .container__titulo .titulo__h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  width: 15%;
   background-color: #3c5f63;
   color: whitesmoke;
   border-radius: 3px;
   padding: 0.5rem;
-  margin-left: 28rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
@@ -247,8 +255,14 @@ header .botonera ul a:hover {
   z-index: 1;
   width: 20rem;
   height: 30rem;
-  border: 1px solid grey;
+  margin-top: 7rem;
+  background-color: #fafafa;
   border-radius: 6px;
+  padding: 1rem;
+  text-align: justify;
+  white-space: pre-line;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
 #contacto {
@@ -269,8 +283,8 @@ header .botonera ul a:hover {
   text-align: center;
   background: #ffffff;
   border-radius: 1em;
-  -webkit-box-shadow: 0 0 10px;
-          box-shadow: 0 0 10px;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
 #contacto .card__media img {
