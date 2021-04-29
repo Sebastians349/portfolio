@@ -206,6 +206,8 @@ header {
   .container__titulo {
     display: flex;
     justify-content: center;
+    padding: 2rem;
+
     .titulo__h {
       display: flex;
       text-align: center;
@@ -214,7 +216,6 @@ header {
       border-radius: 3px;
       padding: 0.5rem;
       text-transform: uppercase;
-      margin-bottom: 2rem;
     }
   }
 
@@ -237,10 +238,16 @@ header {
       box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
       .container__iconos {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 0.5rem;
         font-size: 3rem;
         color: map-get($colors, back__shade1);
+      }
+      h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
       }
     }
   }
