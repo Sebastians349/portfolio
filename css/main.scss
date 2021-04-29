@@ -136,14 +136,14 @@ header {
 
   .titulo {
     display: block;
-    float: left;
+    float: right;
     writing-mode: vertical-rl;
     padding: 1rem;
     margin-top: 18rem;
-    margin-left: 3rem;
+    margin-right: 3rem;
     border-radius: 3px;
     text-transform: uppercase;
-    background-color: map-get($colors, shade__2);
+    background-color: map-get($colors, tint__1);
     color: whitesmoke;
     align-self: center;
   }

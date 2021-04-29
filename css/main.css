@@ -126,16 +126,16 @@ header .botonera ul a:hover {
 
 #proyectos .titulo {
   display: block;
-  float: left;
+  float: right;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   padding: 1rem;
   margin-top: 18rem;
-  margin-left: 3rem;
+  margin-right: 3rem;
   border-radius: 3px;
   text-transform: uppercase;
-  background-color: #0a1537;
+  background-color: #232e50;
   color: whitesmoke;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
