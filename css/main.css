@@ -114,6 +114,10 @@ header .botonera ul a:hover {
   height: 100vh;
 }
 
+#proyectos img {
+  width: auto;
+}
+
 #proyectos .fondo__proyectos {
   -webkit-clip-path: polygon(50% 0, 80% 0, 80% 100%, 50% 100%);
           clip-path: polygon(50% 0, 80% 0, 80% 100%, 50% 100%);

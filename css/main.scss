@@ -125,6 +125,10 @@ header {
 #proyectos {
   height: 100vh;
 
+  img {
+    width: auto;
+  }
+
   .fondo__proyectos {
     clip-path: polygon(50% 0, 80% 0, 80% 100%, 50% 100%);
     background-color: map-get($colors, tint__2);
