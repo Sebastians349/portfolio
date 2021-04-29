@@ -31,7 +31,6 @@ html {
 
 body {
   height: 100vh;
-  margin: 0;
   font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
 }
@@ -235,6 +234,13 @@ header {
       text-align: justify;
       white-space: pre-line;
       box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+      .container__iconos {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+        color: map-get($colors, back__shade1);
+      }
     }
   }
 }
