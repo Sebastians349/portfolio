@@ -112,6 +112,19 @@ header .botonera ul a:hover {
 
 #proyectos {
   height: 100vh;
+  /* .titulo {
+    display: block;
+    float: right;
+    writing-mode: vertical-rl;
+    padding: 1rem;
+    margin-top: 18rem;
+    margin-right: 3rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: map-get($colors, tint__1);
+    color: whitesmoke;
+    align-self: center;
+  } */
 }
 
 #proyectos img {
@@ -119,8 +132,8 @@ header .botonera ul a:hover {
 }
 
 #proyectos .fondo__proyectos {
-  -webkit-clip-path: polygon(50% 0, 80% 0, 80% 100%, 50% 100%);
-          clip-path: polygon(50% 0, 80% 0, 80% 100%, 50% 100%);
+  -webkit-clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+          clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
   background-color: #3c4564;
   width: 100%;
   height: 100%;
@@ -128,37 +141,25 @@ header .botonera ul a:hover {
   z-index: 1;
 }
 
-#proyectos .titulo {
-  display: block;
-  float: right;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  padding: 1rem;
-  margin-top: 18rem;
-  margin-right: 3rem;
-  border-radius: 3px;
-  text-transform: uppercase;
-  background-color: #232e50;
-  color: whitesmoke;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+#proyectos .container__titulo {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+#proyectos .container__titulo .titulo {
+  width: 25rem;
 }
 
 #proyectos .container__proyectos {
-  height: 100%;
-  width: 80%;
+  width: 85%;
   margin-left: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
