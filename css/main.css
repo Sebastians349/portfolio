@@ -112,19 +112,6 @@ header .botonera ul a:hover {
 
 #proyectos {
   height: 100vh;
-  /* .titulo {
-    display: block;
-    float: right;
-    writing-mode: vertical-rl;
-    padding: 1rem;
-    margin-top: 18rem;
-    margin-right: 3rem;
-    border-radius: 3px;
-    text-transform: uppercase;
-    background-color: map-get($colors, tint__1);
-    color: whitesmoke;
-    align-self: center;
-  } */
 }
 
 #proyectos img {
@@ -134,11 +121,11 @@ header .botonera ul a:hover {
 #proyectos .fondo__proyectos {
   -webkit-clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
           clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
-  background-color: #3c4564;
+  background-color: #3c5f63;
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 #proyectos .container__titulo {
@@ -148,18 +135,16 @@ header .botonera ul a:hover {
 }
 
 #proyectos .container__titulo .titulo {
-  width: 25rem;
+  width: 20rem;
 }
 
 #proyectos .container__proyectos {
   width: 85%;
-  margin-left: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -179,7 +164,7 @@ header .botonera ul a:hover {
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
   margin: 1rem 0 0;
-  color: #0008ff;
+  color: #0b173d;
   text-transform: uppercase;
 }
 
@@ -212,7 +197,7 @@ header .botonera ul a:hover {
 #herramientas .fondo__herramientas {
   -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
           clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-  background-color: #0b373c;
+  background-color: #232e50;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -226,23 +211,14 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem;
 }
 
-#herramientas .container__titulo .titulo__h {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  background-color: #3c5f63;
-  color: whitesmoke;
-  border-radius: 3px;
-  padding: 0.5rem;
-  text-transform: uppercase;
+#herramientas .container__titulo .titulo {
+  width: 20em;
+  padding-top: 3rem;
 }
 
 #herramientas .container__herramientas {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +257,7 @@ header .botonera ul a:hover {
       flex-wrap: wrap;
   margin-bottom: 0.5rem;
   font-size: 3rem;
-  color: #3c5f63;
+  color: #232e50;
 }
 
 #herramientas .container__herramientas .card__herramientas h3 {
@@ -301,6 +277,11 @@ header .botonera ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#contacto .container__titulo .titulo {
+  width: 20rem;
+  padding: 2rem;
 }
 
 #contacto .card {
@@ -356,7 +337,7 @@ header .botonera ul a:hover {
 
 #contacto .button {
   display: inline-block;
-  background: #0a1537;
+  background: #0008ff;
   color: #fff;
   padding: 0.5rem 1rem;
   letter-spacing: 0.03ch;
@@ -366,7 +347,7 @@ header .botonera ul a:hover {
 }
 
 #contacto a:hover {
-  background-color: #0008ff;
+  background-color: #0b173d;
 }
 
 @media only screen and (min-width: 1050px) {
