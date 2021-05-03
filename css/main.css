@@ -104,10 +104,26 @@ header .botonera ul a:hover {
   height: 100vh;
 }
 
-.principal h1 {
-  width: 60%;
-  font-size: 4em;
+.principal .container__h1 {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.principal .container__h1 img {
+  width: 20rem;
+}
+
+.principal .container__h1 h1 {
+  font-size: 3em;
   padding: 0 0.4em;
+  line-height: 1;
 }
 
 #proyectos {
@@ -135,17 +151,21 @@ header .botonera ul a:hover {
 }
 
 #proyectos .container__titulo .titulo {
-  width: 20rem;
+  margin-top: 2rem;
+  width: 22rem;
 }
 
 #proyectos .container__proyectos {
-  width: 75%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
@@ -162,9 +182,9 @@ header .botonera ul a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: justify;
-  line-height: 1.3;
+  line-height: 1.2;
   padding: 1rem;
-  margin-right: 2rem;
+  margin-right: 6rem;
 }
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
@@ -189,12 +209,13 @@ header .botonera ul a:hover {
   width: 400px;
   display: block;
   z-index: 1;
+  min-height: 2rem;
 }
 
 #proyectos .container__proyectos .container__img .img__proyectos {
   width: 15rem;
   margin: 2.5rem 0 0 0;
-  border-radius: 10px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
           box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
