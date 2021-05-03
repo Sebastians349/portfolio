@@ -134,7 +134,7 @@ header {
   }
 
   .fondo__proyectos {
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+    clip-path: polygon(65% 0, 100% 0, 100% 100%, 65% 100%);
     background-color: map-get($colors, analog--1-shade);
     width: 100%;
     height: 100%;
@@ -153,9 +153,9 @@ header {
   }
 
   .container__proyectos {
-    width: 85%;
+    width: 75%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -164,8 +164,10 @@ header {
       width: 400px;
       display: flex;
       flex-direction: column;
+      text-align: justify;
+      line-height: 1.3;
       padding: 1rem;
-      margin-right: 5rem;
+      margin-right: 2rem;
       .titulo__proyecto {
         margin: 1rem 0 0;
         color: map-get($colors, secondary);
@@ -375,6 +377,8 @@ header {
     .logo_hero {
       display: block;
       margin-right: -5rem;
+      position: relative;
+      z-index: 1;
     }
   }
 } // ///////// fin media 1050px /////////
