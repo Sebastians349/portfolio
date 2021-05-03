@@ -143,10 +143,13 @@ header .botonera ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #proyectos .container__proyectos .container__txt {
@@ -164,7 +167,7 @@ header .botonera ul a:hover {
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
   margin: 1rem 0 0;
-  color: #0b173d;
+  color: #0008ff;
   text-transform: uppercase;
 }
 
@@ -197,7 +200,7 @@ header .botonera ul a:hover {
 #herramientas .fondo__herramientas {
   -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
           clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-  background-color: #232e50;
+  background-color: #200b3c;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -257,7 +260,7 @@ header .botonera ul a:hover {
       flex-wrap: wrap;
   margin-bottom: 0.5rem;
   font-size: 3rem;
-  color: #232e50;
+  color: #200b3c;
 }
 
 #herramientas .container__herramientas .card__herramientas h3 {
@@ -289,8 +292,8 @@ header .botonera ul a:hover {
   text-align: center;
   background: #ffffff;
   border-radius: 1em;
-  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  -webkit-box-shadow: 0 7px 30px -10px rgba(99, 115, 122, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(99, 115, 122, 0.5);
 }
 
 #contacto .card__media img {
@@ -337,7 +340,7 @@ header .botonera ul a:hover {
 
 #contacto .button {
   display: inline-block;
-  background: #0008ff;
+  background: #3c4564;
   color: #fff;
   padding: 0.5rem 1rem;
   letter-spacing: 0.03ch;
@@ -347,7 +350,7 @@ header .botonera ul a:hover {
 }
 
 #contacto a:hover {
-  background-color: #0b173d;
+  background-color: #635a3b;
 }
 
 @media only screen and (min-width: 1050px) {

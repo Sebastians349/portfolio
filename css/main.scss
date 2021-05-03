@@ -2,18 +2,22 @@
 
 $colors: (
   primary: #0b173d,
+  primary--shade1: #091231,
+  primarry--shade2: #0a1537,
+  primary--tint1: #232e50,
+  primary--tint2: #3c4564,
+  primary--tint2--complementary: #635a3b,
+  analog--1: #0b373c,
+  analog--1-shade: #3c5f63,
+  analog--1-shade-hue: #483d63,
+  analog--2: #200b3c,
+  analog--2-tint: #2f1057,
   secondary: #0008ff,
-  txt__dark: #000,
-  txt__hover: #9da2b1,
-  background__1: #0b373c,
-  back__shade1: #3c5f63,
-  white__1: #fafafa,
+  txt--dark: #000,
+  txt--hover: #9da2b1,
+  white--1: #fafafa,
   accent: #9dff00,
-  accent__2: #ffd23d,
-  shade__1: #091231,
-  shade__2: #0a1537,
-  tint__1: #232e50,
-  tint__2: #3c4564,
+  accent--2: #ffd23d,
 );
 
 * {
@@ -42,7 +46,7 @@ ul {
   padding: 0;
 }
 a {
-  color: map-get($colors, txt__dark);
+  color: map-get($colors, txt--dark);
   text-decoration: none;
 }
 
@@ -58,12 +62,12 @@ a {
 .nav__container {
   .redes {
     a {
-      color: map-get($colors, white__1);
+      color: map-get($colors, white--1);
       padding: 0.1em 0.5em;
       font-size: 1.5rem;
     }
     a:hover {
-      background-color: map-get($colors, white__1);
+      background-color: map-get($colors, white--1);
       color: #091231;
       border-radius: 4px;
     }
@@ -131,7 +135,7 @@ header {
 
   .fondo__proyectos {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
-    background-color: map-get($colors, back__shade1);
+    background-color: map-get($colors, analog--1-shade);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -151,8 +155,10 @@ header {
   .container__proyectos {
     width: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 
     .container__txt {
       width: 400px;
@@ -162,7 +168,7 @@ header {
       margin-right: 5rem;
       .titulo__proyecto {
         margin: 1rem 0 0;
-        color: map-get($colors, primary);
+        color: map-get($colors, secondary);
         text-transform: uppercase;
       }
       .nombre__web {
@@ -194,7 +200,7 @@ header {
 #herramientas {
   .fondo__herramientas {
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-    background-color: map-get($colors, tint__1);
+    background-color: map-get($colors, analog--2);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -231,7 +237,7 @@ header {
         flex-wrap: wrap;
         margin-bottom: 0.5rem;
         font-size: 3rem;
-        color: map-get($colors, tint__1);
+        color: map-get($colors, analog--2);
       }
       h3 {
         margin-top: 1rem;
@@ -260,7 +266,7 @@ header {
     text-align: center;
     background: #ffffff;
     border-radius: 1em;
-    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    box-shadow: 0 7px 30px -10px rgba(99, 115, 122, 0.5);
   }
   .card__media {
     img {
@@ -304,7 +310,7 @@ header {
 
   .button {
     display: inline-block;
-    background: map-get($colors, secondary);
+    background: map-get($colors, primary--tint2);
     color: #fff;
     padding: 0.5rem 1rem;
     letter-spacing: 0.03ch;
@@ -313,7 +319,7 @@ header {
     margin-top: 1em;
   }
   a:hover {
-    background-color: map-get($colors, primary);
+    background-color: map-get($colors, primary--tint2--complementary);
   }
 }
 
