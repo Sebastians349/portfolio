@@ -116,22 +116,23 @@ header {
   width: 350px;
 }
 
+/////////////////// MAIN ///////////////
+
 .principal {
   height: 100vh;
 
   .container__h1 {
-    width: 50vw;
+    width: 65%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     img {
-      width: 20rem;
+      width: 45rem;
     }
 
     h1 {
       font-size: 3em;
-      padding: 0 0.4em;
       line-height: 1;
     }
   }
@@ -240,15 +241,15 @@ header {
     .card__herramientas {
       position: relative;
       z-index: 1;
-      width: 20rem;
-      height: 30rem;
+      width: 18rem;
+      height: 28rem;
       margin-top: 7rem;
       background-color: #fafafa;
       border-radius: 6px;
       padding: 1rem;
       text-align: justify;
       white-space: pre-line;
-      box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
       .container__iconos {
         display: flex;
         justify-content: space-evenly;
@@ -385,6 +386,10 @@ header {
     justify-content: space-between;
     place-items: center;
     word-wrap: break-word;
+
+    .container__mobile {
+      display: none;
+    }
 
     h1 {
       font-size: 4em;
