@@ -128,7 +128,7 @@ header {
     flex-wrap: wrap;
 
     img {
-      width: 45rem;
+      width: 40rem;
     }
 
     h1 {
@@ -343,9 +343,48 @@ header {
   }
 }
 
-//////////////////////////// BREAKPOINT  ////////////////////////////
+//////////////////////////// BREAKPOINTS  ////////////////////////////
 
-// Falta el min width 800px//
+@media only screen and (min-width: 800px) {
+  #fondo {
+    display: flex;
+  }
+
+  .nav__container {
+    display: grid;
+    grid-template-columns: 79% auto;
+    .redes {
+      display: flex;
+      justify-content: space-around;
+      margin-left: 3.5rem;
+    }
+    .botonera a {
+      color: black;
+    }
+  }
+  header {
+    padding: 1.5em 1em 2em 4em;
+  }
+
+  .principal {
+    height: 57%;
+    .container__h1 {
+      display: grid;
+      grid-template-columns: 90% auto;
+      margin: 15rem 4rem;
+      .container__titulo {
+        img {
+          width: 30rem;
+        }
+      }
+      .logo_hero {
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+} // ///////// fin min width 800px/////////
 
 @media only screen and (min-width: 1050px) {
   #fondo {
@@ -393,7 +432,6 @@ header {
 
     h1 {
       font-size: 4em;
-      margin-left: 1rem;
     }
 
     .logo_hero {
