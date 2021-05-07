@@ -424,22 +424,18 @@ header {
     height: 90vh;
     display: flex;
     justify-content: space-between;
-    place-items: center;
-    word-wrap: break-word;
-
+    .logo_hero {
+      display: block;
+      margin-right: -5rem;
+      position: relative;
+      z-index: 1;
+    }
     .container__mobile {
       display: none;
     }
 
     h1 {
       font-size: 4em;
-    }
-
-    .logo_hero {
-      display: block;
-      margin-right: -5rem;
-      position: relative;
-      z-index: 1;
     }
   }
 } // ///////// fin media 1050px /////////
@@ -460,7 +456,10 @@ header {
 
 @media only screen and (min-width: 1550px) {
   header {
-    padding: 2em 0.5em 2em 2em;
+    padding: 2em 1em 2em 2em;
+    a {
+      margin-left: 2.5rem;
+    }
   }
   .redes {
     padding: 2em 6em 2em 4em;

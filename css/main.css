@@ -469,20 +469,18 @@ header .botonera ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    place-items: center;
-    word-wrap: break-word;
-  }
-  .principal .container__mobile {
-    display: none;
-  }
-  .principal h1 {
-    font-size: 4em;
   }
   .principal .logo_hero {
     display: block;
     margin-right: -5rem;
     position: relative;
     z-index: 1;
+  }
+  .principal .container__mobile {
+    display: none;
+  }
+  .principal h1 {
+    font-size: 4em;
   }
 }
 
@@ -498,7 +496,10 @@ header .botonera ul a:hover {
 
 @media only screen and (min-width: 1550px) {
   header {
-    padding: 2em 0.5em 2em 2em;
+    padding: 2em 1em 2em 2em;
+  }
+  header a {
+    margin-left: 2.5rem;
   }
   .redes {
     padding: 2em 6em 2em 4em;
