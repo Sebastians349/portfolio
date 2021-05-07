@@ -352,11 +352,15 @@ header {
 
   .nav__container {
     display: grid;
-    grid-template-columns: 79% auto;
+    grid-template-columns: 78% auto;
     .redes {
       display: flex;
-      justify-content: space-around;
-      margin-left: 3.5rem;
+      justify-content: space-between;
+      padding: 2em 4em 2em 1em;
+
+      ul {
+        display: flex;
+      }
     }
     .botonera a {
       color: black;
@@ -403,14 +407,11 @@ header {
   header {
     padding: 2em 2em 2em 4em;
   }
-  .redes {
-    padding: 2em 4em 2em 0;
-  }
 
   .redes {
-    display: block;
     float: right;
-
+    padding: 2em 4em 2em 1em;
+    margin-left: 4rem;
     ul {
       display: flex;
       justify-content: space-between;
@@ -450,7 +451,8 @@ header {
     padding: 2em 2em 2em 10em;
   }
   .redes {
-    padding: 2em 10em 2em 0;
+    padding: 2em 10em 2em 4em;
+    margin-left: 4rem;
   }
 }
 // **********fin media 1250px *******
@@ -461,6 +463,7 @@ header {
     padding: 2em 0.5em 2em 2em;
   }
   .redes {
-    padding: 2em 6em 2em 0;
+    padding: 2em 6em 2em 4em;
+    margin-left: 10rem;
   }
 } // **********fin media 1550px *******

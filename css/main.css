@@ -384,16 +384,22 @@ header .botonera ul a:hover {
   .nav__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 79% auto;
-        grid-template-columns: 79% auto;
+    -ms-grid-columns: 78% auto;
+        grid-template-columns: 78% auto;
   }
   .nav__container .redes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-left: 3.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em 4em 2em 1em;
+  }
+  .nav__container .redes ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav__container .botonera a {
     color: black;
@@ -441,11 +447,9 @@ header .botonera ul a:hover {
     padding: 2em 2em 2em 4em;
   }
   .redes {
-    padding: 2em 4em 2em 0;
-  }
-  .redes {
-    display: block;
     float: right;
+    padding: 2em 4em 2em 1em;
+    margin-left: 4rem;
   }
   .redes ul {
     display: -webkit-box;
@@ -487,7 +491,8 @@ header .botonera ul a:hover {
     padding: 2em 2em 2em 10em;
   }
   .redes {
-    padding: 2em 10em 2em 0;
+    padding: 2em 10em 2em 4em;
+    margin-left: 4rem;
   }
 }
 
@@ -496,7 +501,8 @@ header .botonera ul a:hover {
     padding: 2em 0.5em 2em 2em;
   }
   .redes {
-    padding: 2em 6em 2em 0;
+    padding: 2em 6em 2em 4em;
+    margin-left: 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
