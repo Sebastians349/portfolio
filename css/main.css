@@ -105,19 +105,19 @@ header .botonera ul a:hover {
 }
 
 .principal .container__h1 {
-  width: 65%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .principal .container__h1 img {
-  width: 40rem;
+  width: 30rem;
 }
 
 .principal .container__h1 h1 {
@@ -407,23 +407,21 @@ header .botonera ul a:hover {
   header {
     padding: 1.5em 1em 2em 4em;
   }
-  .principal {
-    height: 57%;
+  .principal .logo_hero {
+    display: block;
   }
   .principal .container__h1 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 90% auto;
-        grid-template-columns: 90% auto;
-    margin: 15rem 4rem;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10rem 4rem 0;
   }
   .principal .container__h1 .container__titulo img {
     width: 30rem;
-  }
-  .principal .container__h1 .logo_hero {
-    display: block;
-    position: relative;
-    z-index: 1;
   }
 }
 
@@ -476,6 +474,9 @@ header .botonera ul a:hover {
     position: relative;
     z-index: 1;
   }
+  .principal .container__h1 {
+    margin: 10rem 4rem;
+  }
   .principal .container__mobile {
     display: none;
   }
@@ -492,6 +493,9 @@ header .botonera ul a:hover {
     padding: 2em 10em 2em 4em;
     margin-left: 4rem;
   }
+  .principal .container__h1 {
+    margin: 15rem 3rem;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -504,6 +508,9 @@ header .botonera ul a:hover {
   .redes {
     padding: 2em 6em 2em 4em;
     margin-left: 10rem;
+  }
+  .principal .container__h1 {
+    margin: 12rem -2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
