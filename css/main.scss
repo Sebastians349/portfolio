@@ -367,9 +367,9 @@ header {
       color: black;
     }
   }
-  header {
+  /* header {
     padding: 1.5em 1em 2em 4em;
-  }
+  } */
 
   .principal {
     display: flex;
@@ -386,7 +386,7 @@ header {
       margin: 10rem 4rem 0;
       .container__titulo {
         img {
-          width: 30rem;
+          width: 35rem;
         }
       }
     }
@@ -429,7 +429,12 @@ header {
       margin-top: 4rem;
     }
     .container__h1 {
-      margin: 10rem 4rem;
+      margin: 10rem 6rem;
+      .container__titulo {
+        img {
+          width: 45rem;
+        }
+      }
     }
     .container__mobile {
       display: none;

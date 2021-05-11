@@ -405,9 +405,9 @@ header .botonera ul a:hover {
   .nav__container .botonera a {
     color: black;
   }
-  header {
+  /* header {
     padding: 1.5em 1em 2em 4em;
-  }
+  } */
   .principal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,7 +435,7 @@ header .botonera ul a:hover {
     margin: 10rem 4rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 30rem;
+    width: 35rem;
   }
 }
 
@@ -484,7 +484,10 @@ header .botonera ul a:hover {
     margin-top: 4rem;
   }
   .principal .container__h1 {
-    margin: 10rem 4rem;
+    margin: 10rem 6rem;
+  }
+  .principal .container__h1 .container__titulo img {
+    width: 45rem;
   }
   .principal .container__mobile {
     display: none;
