@@ -518,10 +518,17 @@ header .botonera ul a:hover {
   }
   .redes {
     padding: 2em 6em 2em 4em;
-    margin-left: 10rem;
+    margin-left: 12rem;
+  }
+  .principal .logo_hero {
+    display: block;
+    margin-top: 8rem;
   }
   .principal .container__h1 {
-    margin: 12rem -2rem;
+    margin: 12rem 4rem;
+  }
+  .principal .container__h1 .container__titulo img {
+    width: 50rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
