@@ -17,7 +17,8 @@ body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
-  overflow-x: hidden;
+  /*   overflow-x: hidden;
+ */
 }
 
 ul {
@@ -470,7 +471,6 @@ header .botonera ul a:hover {
   }
   .principal .logo_hero {
     display: block;
-    margin-right: -5rem;
     position: relative;
     z-index: 1;
   }
