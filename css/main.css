@@ -395,7 +395,7 @@ header .botonera ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2em 4em 2em 1em;
+    padding: 2em 2em 0 1em;
   }
   .nav__container .redes ul {
     display: -webkit-box;
@@ -408,8 +408,21 @@ header .botonera ul a:hover {
   header {
     padding: 1.5em 1em 2em 4em;
   }
+  .principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .principal .logo_hero {
     display: block;
+    margin-top: 6rem;
   }
   .principal .container__h1 {
     width: 50%;
@@ -442,13 +455,12 @@ header .botonera ul a:hover {
   .nav__container .botonera a {
     color: black;
   }
-  header {
+  /* header {
     padding: 2em 2em 2em 4em;
-  }
+  } */
   .redes {
-    float: right;
     padding: 2em 4em 2em 1em;
-    margin-left: 4rem;
+    margin-left: 6rem;
   }
   .redes ul {
     display: -webkit-box;
@@ -457,11 +469,9 @@ header .botonera ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 7em;
-    float: right;
   }
   .principal {
-    height: 90vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -471,8 +481,7 @@ header .botonera ul a:hover {
   }
   .principal .logo_hero {
     display: block;
-    position: relative;
-    z-index: 1;
+    margin-top: 4rem;
   }
   .principal .container__h1 {
     margin: 10rem 4rem;
@@ -485,7 +494,7 @@ header .botonera ul a:hover {
   }
 }
 
-@media only screen and (min-width: 1250) {
+/* @media only screen and (min-width: 1250) {
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -493,11 +502,13 @@ header .botonera ul a:hover {
     padding: 2em 10em 2em 4em;
     margin-left: 4rem;
   }
-  .principal .container__h1 {
-    margin: 15rem 3rem;
-  }
-}
 
+  .principal {
+    .container__h1 {
+      margin: 15rem 3rem;
+    }
+  }
+} */
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 1em 2em 2em;

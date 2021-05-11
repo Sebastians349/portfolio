@@ -357,7 +357,7 @@ header {
     .redes {
       display: flex;
       justify-content: space-between;
-      padding: 2em 4em 2em 1em;
+      padding: 2em 2em 0 1em;
 
       ul {
         display: flex;
@@ -372,8 +372,12 @@ header {
   }
 
   .principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     .logo_hero {
       display: block;
+      margin-top: 6rem;
     }
     .container__h1 {
       width: 50%;
@@ -387,7 +391,7 @@ header {
       }
     }
   }
-} // ///////// fin min width 800px/////////
+} // ///////// FIN 800px/////////
 
 @media only screen and (min-width: 1050px) {
   #fondo {
@@ -403,30 +407,26 @@ header {
     }
   }
 
-  header {
+  /* header {
     padding: 2em 2em 2em 4em;
-  }
+  } */
 
   .redes {
-    float: right;
     padding: 2em 4em 2em 1em;
-    margin-left: 4rem;
+    margin-left: 6rem;
     ul {
       display: flex;
       justify-content: space-between;
-      width: 7em;
-      float: right;
     }
   }
 
   .principal {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     .logo_hero {
       display: block;
-      position: relative;
-      z-index: 1;
+      margin-top: 4rem;
     }
     .container__h1 {
       margin: 10rem 4rem;
@@ -443,7 +443,7 @@ header {
 
 ////////////////////////////  BREAKPOINT  ////////////////////////////
 
-@media only screen and (min-width: 1250) {
+/* @media only screen and (min-width: 1250) {
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -457,7 +457,7 @@ header {
       margin: 15rem 3rem;
     }
   }
-}
+} */
 // **********fin media 1250px *******
 //////////////////////////// BREAKPOINT  ////////////////////////////
 
