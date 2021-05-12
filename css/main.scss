@@ -77,16 +77,25 @@ a {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 2em;
   font-size: 1rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-align: center;
+  }
 
   .logo {
     font-weight: bold;
     text-align: justify;
     color: black;
     font-size: 1.5rem;
-    padding-right: 0.5rem;
   }
 
   .botonera {
@@ -94,8 +103,8 @@ header {
       display: flex;
 
       a {
-        color: black;
-        display: block;
+        display: flex;
+        justify-content: center;
         padding: 0.5em 1em;
       }
 
@@ -126,14 +135,13 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
     img {
-      width: 30rem;
+      width: 17rem;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2em;
       line-height: 1;
     }
   }
@@ -344,7 +352,7 @@ header {
   }
 }
 
-//////////////////////////// BREAKPOINTS  ////////////////////////////
+//////////////////////////// BREAKPOINTS  ///////////////////////////////////////////////////////////////////////
 
 @media only screen and (min-width: 800px) {
   #fondo {
@@ -367,9 +375,14 @@ header {
       color: black;
     }
   }
-  /* header {
-    padding: 1.5em 1em 2em 4em;
-  } */
+  header {
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
   .principal {
     display: flex;
@@ -386,7 +399,10 @@ header {
       margin: 10rem 4rem 0;
       .container__titulo {
         img {
-          width: 35rem;
+          width: 30rem;
+        }
+        h1 {
+          font-size: 2.5em;
         }
       }
     }
@@ -446,24 +462,6 @@ header {
   }
 } // ///////// fin media 1050px /////////
 
-////////////////////////////  BREAKPOINT  ////////////////////////////
-
-/* @media only screen and (min-width: 1250) {
-  header {
-    padding: 2em 2em 2em 10em;
-  }
-  .redes {
-    padding: 2em 10em 2em 4em;
-    margin-left: 4rem;
-  }
-
-  .principal {
-    .container__h1 {
-      margin: 15rem 3rem;
-    }
-  }
-} */
-// **********fin media 1250px *******
 //////////////////////////// BREAKPOINT  ////////////////////////////
 
 @media only screen and (min-width: 1550px) {

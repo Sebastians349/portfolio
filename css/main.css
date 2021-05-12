@@ -58,11 +58,26 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 2em;
   font-size: 1rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header a {
+  text-align: center;
 }
 
 header .logo {
@@ -70,7 +85,6 @@ header .logo {
   text-align: justify;
   color: black;
   font-size: 1.5rem;
-  padding-right: 0.5rem;
 }
 
 header .botonera ul {
@@ -80,8 +94,12 @@ header .botonera ul {
 }
 
 header .botonera ul a {
-  color: black;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0.5em 1em;
 }
 
@@ -113,16 +131,14 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .principal .container__h1 img {
-  width: 30rem;
+  width: 17rem;
 }
 
 .principal .container__h1 h1 {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1;
 }
 
@@ -405,9 +421,20 @@ header .botonera ul a:hover {
   .nav__container .botonera a {
     color: black;
   }
-  /* header {
-    padding: 1.5em 1em 2em 4em;
-  } */
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .principal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,7 +462,10 @@ header .botonera ul a:hover {
     margin: 10rem 4rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 35rem;
+    width: 30rem;
+  }
+  .principal .container__h1 .container__titulo h1 {
+    font-size: 2.5em;
   }
 }
 
@@ -497,21 +527,6 @@ header .botonera ul a:hover {
   }
 }
 
-/* @media only screen and (min-width: 1250) {
-  header {
-    padding: 2em 2em 2em 10em;
-  }
-  .redes {
-    padding: 2em 10em 2em 4em;
-    margin-left: 4rem;
-  }
-
-  .principal {
-    .container__h1 {
-      margin: 15rem 3rem;
-    }
-  }
-} */
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 1em 2em 2em;
