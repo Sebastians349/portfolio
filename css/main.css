@@ -82,7 +82,6 @@ header a {
 
 header .logo {
   font-weight: bold;
-  text-align: justify;
   color: black;
   font-size: 1.5rem;
 }
@@ -116,7 +115,7 @@ header .botonera ul a:hover {
 }
 
 .logo_hero {
-  width: 350px;
+  width: 13rem;
 }
 
 .principal {
@@ -446,10 +445,15 @@ header .botonera ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .principal .logo_hero {
-    display: block;
-    margin-top: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10rem 2rem;
   }
   .principal .container__h1 {
     width: 50%;
@@ -459,7 +463,7 @@ header .botonera ul a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 10rem 4rem 0;
+    margin: 10rem 2rem 0;
   }
   .principal .container__h1 .container__titulo img {
     width: 30rem;
@@ -485,9 +489,6 @@ header .botonera ul a:hover {
   .nav__container .botonera a {
     color: black;
   }
-  /* header {
-    padding: 2em 2em 2em 4em;
-  } */
   .redes {
     padding: 2em 4em 2em 1em;
     margin-left: 6rem;
@@ -510,14 +511,13 @@ header .botonera ul a:hover {
             justify-content: space-between;
   }
   .principal .logo_hero {
-    display: block;
-    margin-top: 4rem;
+    margin: 10rem 4rem;
   }
   .principal .container__h1 {
     margin: 10rem 6rem;
   }
   .principal .container__h1 .container__titulo img {
-    width: 45rem;
+    width: 40rem;
   }
   .principal .container__mobile {
     display: none;
@@ -539,8 +539,7 @@ header .botonera ul a:hover {
     margin-left: 12rem;
   }
   .principal .logo_hero {
-    display: block;
-    margin-top: 8rem;
+    margin: 12rem 2rem;
   }
   .principal .container__h1 {
     margin: 12rem 4rem;
