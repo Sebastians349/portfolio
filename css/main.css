@@ -133,7 +133,7 @@ header .botonera ul a:hover {
 }
 
 .principal .container__h1 img {
-  width: 17rem;
+  width: 25rem;
 }
 
 .principal .container__h1 h1 {
@@ -389,6 +389,37 @@ header .botonera ul a:hover {
 
 #contacto a:hover {
   background-color: #635a3b;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 799px) {
+  #fondo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav__container header .botonera {
+    width: 10rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .principal .container__h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 800px) {

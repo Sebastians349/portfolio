@@ -136,7 +136,7 @@ header {
     justify-content: center;
 
     img {
-      width: 17rem;
+      width: 25rem;
     }
 
     h1 {
@@ -352,6 +352,30 @@ header {
 }
 
 //////////////////////////// BREAKPOINTS  ///////////////////////////////////////////////////////////////////////
+
+@media only screen and (min-width: 320px) and (max-width: 799px) {
+  #fondo {
+    display: flex;
+  }
+  .nav__container {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .botonera {
+        width: 10rem;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  .principal {
+    .container__h1 {
+      display: flex;
+    }
+  }
+} //////////fin media 320px//////////
 
 @media only screen and (min-width: 800px) {
   #fondo {
