@@ -402,7 +402,7 @@ header {
       }
     }
   }
-} //////////fin media 320px//////////
+} /////////////////fin media 320px//////////
 
 @media only screen and (min-width: 800px) {
   #fondo {
@@ -415,7 +415,7 @@ header {
     .redes {
       display: flex;
       justify-content: space-between;
-      padding: 2em 2em 0 1em;
+      padding: 2em 2em 0 3em;
 
       ul {
         display: flex;
@@ -444,16 +444,20 @@ header {
       margin: 10rem 2rem;
     }
     .container__h1 {
-      width: 50%;
+      width: 68%;
       display: flex;
-      justify-content: center;
-      margin: 10rem 2rem 0;
+      flex-direction: column;
+      margin: 10rem 0;
       .container__titulo {
         img {
-          width: 30rem;
+          width: 40rem;
         }
         h1 {
-          font-size: 2.5em;
+          line-height: 1.1;
+          font-size: 2.2em;
+          p {
+            margin-left: -12rem;
+          }
         }
       }
     }
@@ -476,7 +480,7 @@ header {
 
   .redes {
     padding: 2em 4em 2em 1em;
-    margin-left: 6rem;
+    margin-left: 2.5rem;
     ul {
       display: flex;
       justify-content: space-between;
@@ -493,25 +497,59 @@ header {
     }
 
     .container__h1 {
-      margin: 10rem 1.5rem;
+      width: 64%;
+      margin: 10rem 0;
       .container__titulo {
         img {
-          width: 40rem;
+          width: 43rem;
+        }
+        h1 {
+          font-size: 2.5em;
+          p {
+            line-height: 1.3;
+            margin-left: -9.5rem;
+          }
         }
       }
-    }
-    .container__mobile {
-      display: none;
-    }
-
-    h1 {
-      font-size: 4em;
     }
   }
 } // ///////// fin media 1050px /////////
 
 //////////////////////////// BREAKPOINT  ////////////////////////////
 
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 1em 2em 2em;
+    a {
+      margin-left: 0.5rem;
+    }
+  }
+  .redes {
+    padding: 2em 6em 2em 4em;
+    margin-left: 6.5rem;
+  }
+  .principal {
+    .logo_hero {
+      margin: 12rem 2rem;
+    }
+    .container__h1 {
+      width: 60%;
+      margin: 12rem 0;
+      .container__titulo {
+        img {
+          width: 45rem;
+        }
+        h1 {
+          font-size: 2.5em;
+          p {
+            line-height: 1.3;
+            margin-left: -13.5rem;
+          }
+        }
+      }
+    }
+  }
+} // **********fin media 1250px *******
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 1em 2em 2em;
@@ -521,17 +559,25 @@ header {
   }
   .redes {
     padding: 2em 6em 2em 4em;
-    margin-left: 12rem;
+    margin-left: 10rem;
   }
   .principal {
     .logo_hero {
-      margin: 12rem 2rem;
+      margin: 12rem 3rem;
     }
     .container__h1 {
-      margin: 12rem 4rem;
+      width: 52%;
+      margin: 12rem 0rem;
       .container__titulo {
         img {
-          width: 50rem;
+          width: 45rem;
+        }
+        h1 {
+          font-size: 2.5em;
+          p {
+            line-height: 1.3;
+            margin-left: -13.5rem;
+          }
         }
       }
     }

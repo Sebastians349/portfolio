@@ -474,7 +474,7 @@ header .botonera ul a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2em 2em 0 1em;
+    padding: 2em 2em 0 3em;
   }
   .nav__container .redes ul {
     display: -webkit-box;
@@ -520,20 +520,25 @@ header .botonera ul a:hover {
     margin: 10rem 2rem;
   }
   .principal .container__h1 {
-    width: 50%;
+    width: 68%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10rem 2rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 30rem;
+    width: 40rem;
   }
   .principal .container__h1 .container__titulo h1 {
-    font-size: 2.5em;
+    line-height: 1.1;
+    font-size: 2.2em;
+  }
+  .principal .container__h1 .container__titulo h1 p {
+    margin-left: -12rem;
   }
 }
 
@@ -555,7 +560,7 @@ header .botonera ul a:hover {
   }
   .redes {
     padding: 2em 4em 2em 1em;
-    margin-left: 6rem;
+    margin-left: 2.5rem;
   }
   .redes ul {
     display: -webkit-box;
@@ -578,16 +583,48 @@ header .botonera ul a:hover {
     margin: 10rem 4rem;
   }
   .principal .container__h1 {
-    margin: 10rem 1.5rem;
+    width: 64%;
+    margin: 10rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 40rem;
+    width: 43rem;
   }
-  .principal .container__mobile {
-    display: none;
+  .principal .container__h1 .container__titulo h1 {
+    font-size: 2.5em;
   }
-  .principal h1 {
-    font-size: 4em;
+  .principal .container__h1 .container__titulo h1 p {
+    line-height: 1.3;
+    margin-left: -9.5rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 1em 2em 2em;
+  }
+  header a {
+    margin-left: 0.5rem;
+  }
+  .redes {
+    padding: 2em 6em 2em 4em;
+    margin-left: 6.5rem;
+  }
+  .principal .logo_hero {
+    margin: 12rem 2rem;
+  }
+  .principal .container__h1 {
+    width: 60%;
+    margin: 12rem 0;
+  }
+  .principal .container__h1 .container__titulo img {
+    width: 45rem;
+  }
+  .principal .container__h1 .container__titulo h1 {
+    font-size: 2.5em;
+  }
+  .principal .container__h1 .container__titulo h1 p {
+    line-height: 1.3;
+    margin-left: -13.5rem;
   }
 }
 
@@ -600,16 +637,24 @@ header .botonera ul a:hover {
   }
   .redes {
     padding: 2em 6em 2em 4em;
-    margin-left: 12rem;
+    margin-left: 10rem;
   }
   .principal .logo_hero {
-    margin: 12rem 2rem;
+    margin: 12rem 3rem;
   }
   .principal .container__h1 {
-    margin: 12rem 4rem;
+    width: 52%;
+    margin: 12rem 0rem;
   }
   .principal .container__h1 .container__titulo img {
-    width: 50rem;
+    width: 45rem;
+  }
+  .principal .container__h1 .container__titulo h1 {
+    font-size: 2.5em;
+  }
+  .principal .container__h1 .container__titulo h1 p {
+    line-height: 1.3;
+    margin-left: -13.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
