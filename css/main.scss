@@ -61,6 +61,7 @@ a {
 }
 
 .nav__container {
+  display: grid;
   .redes {
     a {
       color: map-get($colors, white--1);
@@ -158,7 +159,7 @@ header {
   height: 100vh;
 
   img {
-    width: auto;
+    width: 50%;
   }
 
   .fondo__proyectos {
@@ -177,27 +178,33 @@ header {
 
     .titulo {
       margin-top: 2rem;
-      width: 22rem;
+      width: 20rem;
+      background: linear-gradient(
+        90deg,
+        hsla(187, 69%, 90%, 0.1) 0%,
+        hsla(0, 0%, 98%, 1) 100%
+      );
+      border-radius: 3px;
+      padding: 0.5rem;
     }
   }
 
   .container__proyectos {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    flex-flow: column wrap;
+    margin-top: 2rem;
 
     .container__txt {
-      width: 400px;
+      width: 20rem;
       display: flex;
       flex-direction: column;
       text-align: justify;
-      line-height: 1.2;
-      padding: 1rem;
-      margin-right: 6rem;
+      line-height: 1.3;
+      padding: 2rem;
+
       .titulo__proyecto {
         margin: 1rem 0 0;
         color: map-get($colors, secondary);
@@ -211,19 +218,26 @@ header {
       p {
         position: relative;
         z-index: 1;
+        background: linear-gradient(
+          90deg,
+          hsla(187, 69%, 90%, 0.1) 0%,
+          hsla(0, 0%, 98%, 1) 100%
+        );
+        border-radius: 3px;
+        padding: 0.2rem;
       }
     }
 
     .container__img {
       position: relative;
-      width: 400px;
-      display: block;
+      display: flex;
+      justify-content: center;
+      width: 20rem;
       z-index: 1;
-      min-height: 2rem;
 
       .img__proyectos {
         width: 15rem;
-        margin: 2.5rem 0 0 0;
+        text-align: center;
         border-radius: 3px;
         box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
       }
@@ -361,7 +375,8 @@ header {
 
 //////////////////////////// BREAKPOINTS  ///////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 499px) {
-  #fondo {
+  #fondo,
+  .fondo__proyectos {
     display: none !important;
   }
 }
@@ -453,7 +468,7 @@ header {
       margin: 10rem 2rem;
     }
     .container__h1 {
-      width: 68%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       margin: 10rem 0;
@@ -468,6 +483,25 @@ header {
             text-align: left;
             margin-left: 2.3rem;
           }
+        }
+      }
+    }
+  }
+  #proyectos {
+    .container__titulo {
+      .titulo {
+        width: 20rem;
+      }
+    }
+
+    .container__proyectos {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      .container__txt {
+        width: 50%;
+        p {
+          background: none;
         }
       }
     }
@@ -524,6 +558,17 @@ header {
       }
     }
   }
+  #proyectos {
+    .container__titulo {
+      .titulo {
+        width: 22.5rem;
+      }
+    }
+    .container__proyectos {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
 } // ///////// fin media 1050px /////////
 
 //////////////////////////// BREAKPOINT  ////////////////////////////
@@ -561,6 +606,17 @@ header {
       }
     }
   }
+  #proyectos {
+    .container__titulo {
+      .titulo {
+      }
+    }
+    .container__proyectos {
+      .container__txt {
+        width: 50%;
+      }
+    }
+  }
 } // **********fin media 1250px *******
 @media only screen and (min-width: 1550px) {
   header {
@@ -593,6 +649,11 @@ header {
           }
         }
       }
+    }
+  }
+  #proyectos {
+    .container__proyectos {
+      width: 100%;
     }
   }
 } // **********fin media 1550px *******
