@@ -129,6 +129,7 @@ header .botonera ul a:hover {
 
 .principal {
   height: 100vh;
+  display: block;
 }
 
 .principal .container__h1 {
@@ -158,11 +159,9 @@ header .botonera ul a:hover {
 }
 
 #proyectos {
+  width: 100vw;
   height: 100vh;
-}
-
-#proyectos img {
-  width: 50%;
+  display: block;
 }
 
 #proyectos .fondo__proyectos {
@@ -192,17 +191,20 @@ header .botonera ul a:hover {
 
 #proyectos .container__proyectos {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2rem;
 }
 
@@ -217,7 +219,7 @@ header .botonera ul a:hover {
           flex-direction: column;
   text-align: justify;
   line-height: 1.3;
-  padding: 2rem;
+  padding: 2rem 0 1rem;
 }
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
@@ -242,7 +244,6 @@ header .botonera ul a:hover {
 }
 
 #proyectos .container__proyectos .container__img {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +251,6 @@ header .botonera ul a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 20rem;
-  z-index: 1;
 }
 
 #proyectos .container__proyectos .container__img .img__proyectos {
@@ -259,6 +259,11 @@ header .botonera ul a:hover {
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
           box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+#herramientas {
+  width: 100%;
+  height: 100%;
 }
 
 #herramientas .fondo__herramientas {
@@ -481,6 +486,12 @@ header .botonera ul a:hover {
     text-align: left;
     margin-left: 0.3rem;
   }
+  #proyectos .container__proyectos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -559,7 +570,7 @@ header .botonera ul a:hover {
     margin: 10rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 40rem;
+    width: 30rem;
   }
   .principal .container__h1 .container__titulo h1 {
     line-height: 1.1;
@@ -567,7 +578,7 @@ header .botonera ul a:hover {
   }
   .principal .container__h1 .container__titulo h1 p {
     text-align: left;
-    margin-left: 2.3rem;
+    margin-left: 4rem;
   }
   #proyectos .container__titulo .titulo {
     width: 20rem;
