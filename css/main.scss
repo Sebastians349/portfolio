@@ -191,9 +191,10 @@ header {
   .container__proyectos {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 2rem;
+    flex-flow: row wrap;
 
     .container__txt {
       width: 20rem;
@@ -227,10 +228,9 @@ header {
     .container__img {
       display: flex;
       justify-content: center;
-      width: 20rem;
-
+      align-items: stretch;
       .img__proyectos {
-        width: 15rem;
+        width: 16.5rem;
         text-align: center;
         border-radius: 3px;
         box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
@@ -423,11 +423,11 @@ header {
       }
     }
   }
-  #proyectos {
+  /* #proyectos {
     .container__proyectos {
       flex-flow: row wrap;
     }
-  }
+  } */
 } /////////////////fin media 320px//////////
 
 @media only screen and (min-width: 800px) {

@@ -197,13 +197,17 @@ header .botonera ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 #proyectos .container__proyectos .container__txt {
@@ -251,11 +255,13 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 #proyectos .container__proyectos .container__img .img__proyectos {
-  width: 15rem;
+  width: 16.5rem;
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
@@ -487,12 +493,11 @@ header .botonera ul a:hover {
     text-align: left;
     margin-left: 0.3rem;
   }
-  #proyectos .container__proyectos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
+  /* #proyectos {
+    .container__proyectos {
+      flex-flow: row wrap;
+    }
+  } */
 }
 
 @media only screen and (min-width: 800px) {
