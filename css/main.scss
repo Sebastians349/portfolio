@@ -263,12 +263,12 @@ header {
 
   .container__herramientas {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: center;
+    flex-flow: column wrap;
     .card__herramientas {
       position: relative;
       z-index: 1;
-      width: 18rem;
+      width: 80%;
       height: 28rem;
       margin-top: 7rem;
       background-color: #fafafa;
@@ -276,7 +276,7 @@ header {
       padding: 1rem;
       text-align: justify;
       white-space: pre-line;
-      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.3);
       .container__iconos {
         display: flex;
         justify-content: space-evenly;
@@ -373,7 +373,8 @@ header {
 //////////////////////////// BREAKPOINTS  ///////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 499px) {
   #fondo,
-  .fondo__proyectos {
+  .fondo__proyectos,
+  .fondo__herramientas {
     display: none !important;
   }
 }
@@ -423,11 +424,18 @@ header {
       }
     }
   }
-  /* #proyectos {
-    .container__proyectos {
+  #herramientas {
+    .container__herramientas {
+      display: flex;
+      justify-content: space-evenly;
       flex-flow: row wrap;
+
+      .card__herramientas {
+        width: 12rem;
+        height: auto;
+      }
     }
-  } */
+  }
 } /////////////////fin media 320px//////////
 
 @media only screen and (min-width: 800px) {
@@ -508,6 +516,16 @@ header {
       }
     }
   }
+  #herramientas {
+    .container__herramientas {
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      .card__herramientas {
+        width: 12rem;
+      }
+    }
+  }
 } // ///////// FIN 800px/////////
 
 @media only screen and (min-width: 1050px) {
@@ -571,6 +589,16 @@ header {
       justify-content: space-evenly;
     }
   }
+  #herramientas {
+    .container__herramientas {
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      .card__herramientas {
+        width: 15rem;
+      }
+    }
+  }
 } // ///////// fin media 1050px /////////
 
 //////////////////////////// BREAKPOINT  ////////////////////////////
@@ -612,6 +640,16 @@ header {
     .container__proyectos {
       .container__txt {
         width: 50%;
+      }
+    }
+  }
+  #herramientas {
+    .container__herramientas {
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      .card__herramientas {
+        width: 18rem;
       }
     }
   }
