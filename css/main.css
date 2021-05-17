@@ -86,6 +86,10 @@ header .logo {
   font-size: 1.5rem;
 }
 
+header .botonera {
+  margin-top: 1rem;
+}
+
 header .botonera ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +134,7 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 4rem;
 }
 
 .principal .container__h1 img {
@@ -420,15 +425,17 @@ header .botonera ul a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 1.6;
+    line-height: 1.3;
   }
   .nav__container header .botonera {
     width: 10rem;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 1rem;
   }
   .principal {
+    height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -437,6 +444,7 @@ header .botonera ul a:hover {
             align-items: start;
   }
   .principal .container__h1 {
+    margin-top: 4rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -450,8 +458,12 @@ header .botonera ul a:hover {
     width: 30rem;
   }
   .principal .container__h1 .container__titulo h1 {
-    font-size: 2em;
     text-align: center;
+  }
+  .principal .container__h1 .container__titulo h1 p {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 0.3rem;
   }
 }
 
@@ -481,8 +493,8 @@ header .botonera ul a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  .nav__container .botonera a {
-    color: black;
+  .nav__container .botonera {
+    margin-top: 0;
   }
   header {
     -webkit-box-pack: justify;
@@ -538,7 +550,8 @@ header .botonera ul a:hover {
     font-size: 2.2em;
   }
   .principal .container__h1 .container__titulo h1 p {
-    margin-left: -12rem;
+    text-align: left;
+    margin-left: 2.3rem;
   }
 }
 
@@ -594,7 +607,8 @@ header .botonera ul a:hover {
   }
   .principal .container__h1 .container__titulo h1 p {
     line-height: 1.3;
-    margin-left: -9.5rem;
+    text-align: left;
+    margin-left: 1.9rem;
   }
 }
 
@@ -624,7 +638,8 @@ header .botonera ul a:hover {
   }
   .principal .container__h1 .container__titulo h1 p {
     line-height: 1.3;
-    margin-left: -13.5rem;
+    text-align: left;
+    margin-left: 3.3rem;
   }
 }
 
@@ -654,7 +669,8 @@ header .botonera ul a:hover {
   }
   .principal .container__h1 .container__titulo h1 p {
     line-height: 1.3;
-    margin-left: -13.5rem;
+    text-align: left;
+    margin-left: 1.6em;
   }
 }
 /*# sourceMappingURL=main.css.map */
