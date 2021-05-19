@@ -157,9 +157,8 @@ header {
 /////////////////// SECTION PROYECTOS ////////////
 #proyectos {
   width: 100%;
-  height: 100%;
-  flex: 1; //toma el espacio remanente
-  overflow: auto; //agrega scrollbar para dispositivos chicos
+  height: auto;
+
   img {
     max-width: 100%;
     height: auto;
@@ -181,7 +180,7 @@ header {
 
     .titulo {
       margin-top: 2rem;
-      width: 20rem;
+      width: 15rem;
       background: linear-gradient(
         90deg,
         hsla(187, 69%, 90%, 0.1) 0%,
@@ -246,9 +245,8 @@ header {
 /////////////////////// HERRAMIENTAS SKILLS/////////////////////
 #herramientas {
   width: 100%;
-  height: 100%;
-  /* flex: 1;
-  overflow: auto; */
+  height: auto;
+
   img {
     max-width: 100%;
     height: auto;
@@ -274,7 +272,7 @@ header {
   .container__herramientas {
     display: flex;
     justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     .card__herramientas {
       position: relative;
       z-index: 1;
@@ -306,27 +304,36 @@ header {
 /////////////////////// CONTACTO/////////////////////
 
 #contacto {
+  width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  flex-flow: column wrap;
 
   .container__titulo {
+    max-width: 100%;
+    height: auto;
+    img {
+      padding-bottom: 5rem;
+    }
     .titulo {
       width: 20rem;
-      padding: 2rem;
     }
   }
 
   .card {
-    width: 30rem;
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
     background: #ffffff;
     border-radius: 1em;
-    box-shadow: 0 7px 30px -10px rgba(99, 115, 122, 0.5);
+    box-shadow: 0 7px 30px -10px rgba(9, 11, 12, 0.5);
   }
   .card__media {
     img {
+      max-width: 100%;
+      height: auto;
       position: relative;
       top: -60px;
       left: 60px;
@@ -436,11 +443,16 @@ header {
   }
 
   #proyectos {
+    height: auto;
+    margin-bottom: 5rem;
     .fondo__proyectos {
       height: 125vh;
     }
-    height: auto;
-    margin-bottom: 5rem;
+    .container__titulo {
+      .titulo {
+        width: 20rem;
+      }
+    }
   }
 
   #herramientas {
@@ -459,6 +471,12 @@ header {
         width: 12rem;
         height: auto;
       }
+    }
+  }
+
+  #contacto {
+    .card {
+      width: 30rem;
     }
   }
 } /////////////////fin media 320/599px//////////
