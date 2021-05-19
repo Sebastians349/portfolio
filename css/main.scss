@@ -160,6 +160,10 @@ header {
   height: 100%;
   flex: 1; //toma el espacio remanente
   overflow: auto; //agrega scrollbar para dispositivos chicos
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .fondo__proyectos {
     clip-path: polygon(65% 0, 100% 0, 100% 100%, 65% 100%);
@@ -243,6 +247,12 @@ header {
 #herramientas {
   width: 100%;
   height: 100%;
+  /* flex: 1;
+  overflow: auto; */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .fondo__herramientas {
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
@@ -424,7 +434,22 @@ header {
       }
     }
   }
+
+  #proyectos {
+    .fondo__proyectos {
+      height: 125vh;
+    }
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
   #herramientas {
+    height: auto;
+    margin-bottom: 5rem;
+    .fondo__herramientas {
+      height: 115vh;
+    }
+
     .container__herramientas {
       display: flex;
       justify-content: space-evenly;
@@ -436,7 +461,7 @@ header {
       }
     }
   }
-} /////////////////fin media 320px//////////
+} /////////////////fin media 320/599px//////////
 
 @media only screen and (min-width: 800px) {
   #fondo {
@@ -498,6 +523,10 @@ header {
     }
   }
   #proyectos {
+    height: auto;
+    .fondo__proyectos {
+      height: 105vh;
+    }
     .container__titulo {
       .titulo {
         width: 20rem;
@@ -579,6 +608,9 @@ header {
     }
   }
   #proyectos {
+    .fondo__proyectos {
+      height: 105vh;
+    }
     .container__titulo {
       .titulo {
         width: 20rem;
@@ -637,6 +669,9 @@ header {
     }
   }
   #proyectos {
+    .fondo__proyectos {
+      height: 100vh;
+    }
     .container__proyectos {
       .container__txt {
         width: 50%;
