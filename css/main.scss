@@ -165,7 +165,7 @@ header {
   }
 
   .fondo__proyectos {
-    clip-path: polygon(65% 0, 100% 0, 100% 100%, 65% 100%);
+    clip-path: polygon(35% 50%, 0 0, 0 100%);
     background-color: map-get($colors, analog--1-shade);
     width: 100%;
     height: 100%;
@@ -256,7 +256,7 @@ header {
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
     background-color: map-get($colors, analog--2);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 1;
   }
@@ -305,11 +305,11 @@ header {
 
 #contacto {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-items: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 
   .container__titulo {
     img {
@@ -479,16 +479,12 @@ header {
   }
 
   #contacto {
-    display: flex;
-    flex-direction: column;
-
+    flex-direction: column wrap;
     .container__titulo {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      /*       flex-direction: row;
- */
     }
     .card {
       width: 20rem;
@@ -592,8 +588,6 @@ header {
     }
   }
   #contacto {
-    flex-direction: column;
-
     .container__titulo {
       img {
         text-align: center;
@@ -727,6 +721,9 @@ header {
     }
   }
   #herramientas {
+    .fondo__herramientas {
+      height: 100%;
+    }
     .container__herramientas {
       display: flex;
       justify-content: space-evenly;
@@ -780,5 +777,7 @@ header {
     .container__proyectos {
       width: 100%;
     }
+  }
+  #herramientas {
   }
 } // **********fin media 1550px *******
