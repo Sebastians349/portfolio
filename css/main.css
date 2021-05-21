@@ -122,15 +122,31 @@ header .botonera ul a:hover {
   display: none;
 }
 
-.logo_hero {
-  width: 13rem;
-}
-
 .principal {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+
+.principal .logo_hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 5rem;
+  margin: 3rem 0 3rem;
 }
 
 .principal .container__h1 {
@@ -476,6 +492,7 @@ header .botonera ul a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
   }
   .nav__container header {
     display: -webkit-box;
@@ -498,26 +515,49 @@ header .botonera ul a:hover {
     margin-top: 1rem;
   }
   .principal {
-    height: 80vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  .principal .logo_hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 8rem;
+    margin: 3rem 0 3rem;
   }
   .principal .container__h1 {
-    margin-top: 4rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .principal .container__h1 .container__titulo {
     height: 8rem;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(212, 243, 247, 0.1)), to(#fafafa));
-    background: linear-gradient(90deg, rgba(212, 243, 247, 0.1) 0%, #fafafa 100%);
-    border-radius: 3px;
+    -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.3);
+    background: #fafafa;
+    border-radius: 6px;
+    padding: 1rem 1rem 0;
   }
   .principal .container__h1 .container__titulo img {
-    width: 30rem;
+    width: 25rem;
   }
   .principal .container__h1 .container__titulo h1 {
     text-align: center;
@@ -535,7 +575,7 @@ header .botonera ul a:hover {
     margin-bottom: 3rem;
   }
   #proyectos .container__titulo .titulo {
-    width: 20rem;
+    width: 17rem;
   }
   #herramientas {
     /* .fondo__herramientas {
@@ -644,6 +684,7 @@ header .botonera ul a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 12rem;
     margin: 10rem 2rem;
   }
   .principal .container__h1 {
@@ -676,7 +717,7 @@ header .botonera ul a:hover {
     } */
   }
   #proyectos .container__titulo .titulo {
-    width: 20rem;
+    width: 15rem;
   }
   #proyectos .container__proyectos {
     display: -webkit-box;
@@ -796,13 +837,10 @@ header .botonera ul a:hover {
     font-size: 2.5em;
     line-height: 1.3;
   }
-  #proyectos {
-    /* .fondo__proyectos {
-      height: 80vh;
-    } */
-  }
-  #proyectos .container__titulo .titulo {
-    width: 20rem;
+  #proyectos .container__titulo {
+    /* .titulo {
+        width: 17rem;
+      } */
   }
   #proyectos .container__proyectos {
     width: 100%;
@@ -860,21 +898,25 @@ header .botonera ul a:hover {
   }
   #proyectos {
     height: 100vh;
-    /* .fondo__proyectos {
-      height: 100vh;
-    } */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
   }
   #proyectos .container__titulo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-left: 1rem;
+    margin-right: 5rem;
+  }
+  #proyectos .container__titulo .titulo {
+    width: 20rem;
   }
   #proyectos .container__proyectos .container__txt {
     width: 50%;
