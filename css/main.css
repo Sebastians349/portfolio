@@ -190,9 +190,16 @@ header .botonera ul a:hover {
 #proyectos .container__titulo .titulo {
   margin-top: 2rem;
   width: 15rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(212, 243, 247, 0.1)), to(#fafafa));
-  background: linear-gradient(90deg, rgba(212, 243, 247, 0.1) 0%, #fafafa 100%);
-  border-radius: 3px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  border-radius: 6px;
+  /* background: linear-gradient(
+        90deg,
+        hsla(187, 69%, 90%, 0.1) 0%,
+        hsla(0, 0%, 98%, 1) 100%
+      );
+      border-radius: 3px; */
   padding: 0.5rem;
 }
 
