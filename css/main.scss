@@ -37,8 +37,7 @@ body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
-  /*   overflow-x: hidden;
- */
+  overflow-x: hidden;
 }
 
 ul {
@@ -148,6 +147,7 @@ header {
       text-align: center;
       p {
         font-size: 1em;
+        letter-spacing: 0.03em;
       }
     }
   }
@@ -485,7 +485,7 @@ header {
       align-items: center;
     }
     .card {
-      width: 20rem;
+      max-width: 30rem;
     }
   }
 } /////////////////fin media 320/599px//////////
@@ -575,6 +575,8 @@ header {
     }
   }
   #herramientas {
+    height: 100%;
+
     /*  .fondo__herramientas {
       height: 100vh;
     } */
@@ -706,9 +708,17 @@ header {
     }
   }
   #proyectos {
+    height: 100vh;
+
     /* .fondo__proyectos {
       height: 100vh;
     } */
+    display: flex;
+    justify-content: space-between;
+    .container__titulo {
+      align-self: center;
+      margin-left: 1rem;
+    }
     .container__proyectos {
       .container__txt {
         width: 50%;
@@ -728,9 +738,9 @@ header {
       }
     }
   }
-  /* #contacto {
-    margin-top: 10rem;
-  } */
+  #contacto {
+    height: 100vh;
+  }
 } // **********fin media 1250px *******
 @media only screen and (min-width: 1550px) {
   header {

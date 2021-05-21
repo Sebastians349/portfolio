@@ -17,8 +17,7 @@ body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
-  /*   overflow-x: hidden;
- */
+  overflow-x: hidden;
 }
 
 ul {
@@ -155,6 +154,7 @@ header .botonera ul a:hover {
 
 .principal .container__h1 h1 p {
   font-size: 1em;
+  letter-spacing: 0.03em;
 }
 
 #proyectos {
@@ -565,7 +565,7 @@ header .botonera ul a:hover {
             align-items: center;
   }
   #contacto .card {
-    width: 20rem;
+    max-width: 30rem;
   }
 }
 
@@ -683,6 +683,7 @@ header .botonera ul a:hover {
     background: none;
   }
   #herramientas {
+    height: 100%;
     /*  .fondo__herramientas {
       height: 100vh;
     } */
@@ -821,9 +822,22 @@ header .botonera ul a:hover {
     text-align: left;
   }
   #proyectos {
+    height: 100vh;
     /* .fondo__proyectos {
       height: 100vh;
     } */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #proyectos .container__titulo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 1rem;
   }
   #proyectos .container__proyectos .container__txt {
     width: 50%;
@@ -846,9 +860,9 @@ header .botonera ul a:hover {
   #herramientas .container__herramientas .card__herramientas {
     width: 15rem;
   }
-  /* #contacto {
-    margin-top: 10rem;
-  } */
+  #contacto {
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
