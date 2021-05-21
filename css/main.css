@@ -842,11 +842,6 @@ header .botonera ul a:hover {
     font-size: 2.5em;
     line-height: 1.3;
   }
-  #proyectos .container__titulo {
-    /* .titulo {
-        width: 17rem;
-      } */
-  }
   #proyectos .container__proyectos {
     width: 100%;
     -webkit-box-pack: space-evenly;
