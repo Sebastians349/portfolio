@@ -128,7 +128,9 @@ header .botonera ul a:hover {
 
 .principal {
   height: 100vh;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .principal .container__h1 {
@@ -139,7 +141,9 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 4rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .principal .container__h1 img {
@@ -378,6 +382,7 @@ header .botonera ul a:hover {
 }
 
 #contacto .card {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,6 +716,23 @@ header .botonera ul a:hover {
   }
 }
 
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ///////////////////// iPad Pro 12.9" ////////// */
+/* Portrait and Landscape */
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  #proyectos {
+    .fondo__proyectos {
+      max-height: 80vh;
+    }
+  }
+  #herramientas {
+    .fondo__herramientas {
+      max-height: 50vh;
+    }
+  }
+} /*----------- FIN  iPad Pro 12.9" ----------- */
 @media only screen and (min-width: 1050px) {
   #fondo {
     display: -webkit-box;

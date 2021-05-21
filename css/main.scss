@@ -3,7 +3,7 @@
 $colors: (
   primary: #0b173d,
   primary--shade1: #091231,
-  primarry--shade2: #0a1537,
+  primary--shade2: #0a1537,
   primary--tint1: #232e50,
   primary--tint2: #3c4564,
   primary--tint2--complementary: #635a3b,
@@ -14,10 +14,7 @@ $colors: (
   analog--2-tint: #2f1057,
   secondary: #0008ff,
   txt--dark: #000,
-  txt--hover: #9da2b1,
   white--1: #fafafa,
-  accent: #9dff00,
-  accent--2: #ffd23d,
 );
 
 * {
@@ -130,13 +127,12 @@ header {
 
 .principal {
   height: 100vh;
-  display: block;
+  display: flex;
   .container__h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
-
+    align-items: flex-start;
     img {
       max-width: 100%;
       height: auto;
@@ -323,6 +319,7 @@ header {
   }
 
   .card {
+    width: 90%;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -600,6 +597,26 @@ header {
     }
   }
 } // ///////// FIN 800px/////////
+
+// QUERIES APPLE
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ///////////////////// iPad Pro 12.9" ////////// */
+/* Portrait and Landscape */
+
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  #proyectos {
+    .fondo__proyectos {
+      max-height: 80vh;
+    }
+  }
+  #herramientas {
+    .fondo__herramientas {
+      max-height: 50vh;
+    }
+  }
+} /*----------- FIN  iPad Pro 12.9" ----------- */
 
 @media only screen and (min-width: 1050px) {
   #fondo {
