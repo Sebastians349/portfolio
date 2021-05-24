@@ -7,63 +7,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6b5186fd5.js" crossorigin="anonymous"></script>
     <title>Sebastian Simarro Portfolio</title>
 </head>
 
 <body>
+    
     <div id="fondo"></div>
     
-    <header>
-        <h1 id="logo"><a href="index.html">Sebastian Simarro</a></h1>
-        <nav id="botonera">
+    <div class="nav__container">
+        <header>
+            <a href="index.html" class="logo">Sebastian Simarro</a>
+            
+            <nav class="botonera">
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#herramientas">Herramientas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="redes">
             <ul>
-                <li><a href="#trabajos">Trabajos</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
             </ul>
-        </nav>
-        
-        <div class="switch_dark">
-            <label class="switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round"></div>
-            </label>
+        </div>
+    </div>
+   
+
+    <section class="principal">
+      <div class="container__h1">
+         <div class="container__titulo">
+            <h1>
+               <img class="titulo" src="images/fed.png" alt="">
+                  <p>desarrollando experiencias</p>
+            </h1>
+         </div>
+      </div>
+        <div class="logo_hero">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 163" preserveAspectRatio="xMidYMid meet"><defs><style>.cls-1{fill:none;stroke:#f6a316;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:#f6a316;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><rect class="cls-1" x="2.5" y="2.5" width="158" height="158"/><polygon class="cls-2" points="52.95 16.07 26.88 61.17 79.01 61.17 52.95 16.07"/><polygon class="cls-2" points="52.95 72.13 26.88 117.23 79.01 117.23 52.95 72.13"/><polygon class="cls-2" points="110.74 46.13 84.68 91.24 136.81 91.24 110.74 46.13"/><polygon class="cls-2" points="110.74 102.2 84.68 147.3 136.81 147.3 110.74 102.2"/></g></g></svg>
+        </div>
+    </section>
+    
+    <section id="proyectos">
+       <div class="fondo__proyectos"></div>
+         <div class="container__titulo"><img class="titulo" src="images/proyectos.png" alt=""></div>
+      
+         <div class="container__proyectos">
+         
+          <div class="container__txt">
+            <h3 class="titulo__proyecto">titulo </h3>
+            <h4 class="nombre__web">www.organizatuplan.com.ar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium, fugit fuga recusandae vel unde! Quod, doloremque odit dolorem soluta ratione exercitationem eaque aspernatur dignissimos perspiciatis fugiat, ea, corrupti nobis?</p> 
           </div>
-        <div id="caja_idioma">
-            <div id="idioma">ENG</div> <br>
-        </div>
-    </header>
-
-
-    <section id="principal">
-        <h2 id="msj_bienvenida">Sitios desde cero
-        </h2>
-        <div id="container_formas">
-            <div class="clase_forma" id="tri_1">.
-            </div>
-            <div class="clase_forma" id="tri_2">.</div>
-            <div class="clase_forma" id="tri_3">.</div>
-            <div class="clase_forma" id="tri_4">.</div>   
-        </div>
-    </section>
-
-    <section id="trabajos">
-        <div class="container">
-            trabajos
-        </div>
-    </section>
+          <div class="container__img">
+            <img src="images/temporal_landing.png" alt="" class="img__proyectos">
+         </div>
+          <div class="container__txt">
+            <h3 class="titulo__proyecto">titulo </h3>
+            <h4 class="nombre__web">www.organizatuplan.com.ar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium, fugit fuga recusandae vel unde! Quod, doloremque odit dolorem soluta ratione exercitationem eaque aspernatur dignissimos perspiciatis fugiat, ea, corrupti nobis?</p> 
+          </div>
+          <div class="container__img">
+            <img src="images/temporal_landing.png" alt="" class="img__proyectos">
+         </div>
+          <div class="container__txt">
+            <h3 class="titulo__proyecto">titulo </h3>
+            <h4 class="nombre__web">www.organizatuplan.com.ar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium, fugit fuga recusandae vel unde! Quod, doloremque odit dolorem soluta ratione exercitationem eaque aspernatur dignissimos perspiciatis fugiat, ea, corrupti nobis?</p> 
+          </div>
+          <div class="container__img">
+            <img src="images/temporal_landing.png" alt="" class="img__proyectos">
+         </div>
+        
+      
+       </div>
+     </section>
+    
     <section id="herramientas">
-        <div class="container">Herramientas</div>
+      <div class="fondo__herramientas"></div>
+      <div class="container__titulo">
+         <img class="titulo" src="images/habilidades.png" alt="">
+      </div>
+      <div class="container__herramientas">
+            <div class="card__herramientas">
+               <div class="container__iconos">
+                  <span class="icono__herramientas"><i class="fab fa-html5"></i>
+                  </span>
+                  <span class="icono__herramientas"><i class="fab fa-css3-alt"></i>
+                  </span>
+                  <span class="icono__herramientas"><i class="fab fa-js" aria-hidden="true"></i>
+                  </span>
+               </div>
+               <h3 class="titulo__card">Desarrollo Front End</h3>                 
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas nobis placeat nam quaerat corrupti veniam totam soluta minus? Quo labore sint, voluptas rem vel magni illo est aliquid consequuntur.
+               </p>        
+            </div>
+            <div class="card__herramientas">
+               <div class="container__iconos">
+                  <span class="icono__herramientas"><i class="fas fa-desktop"></i>
+                  </span>
+                  <span class="icono__herramientas"><i class="fas fa-mobile-alt"></i>
+                  </span>
+               </div>
+             <h3 class="titulo__card">Diseño UX / UI</h3>             
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas nobis placeat nam quaerat corrupti veniam totam soluta minus? Quo labore sint, voluptas rem vel magni illo est aliquid consequuntur.
+             </p>        
+            </div>
+            <div class="card__herramientas">
+               <div class="container__iconos">
+                  <span class="icono__herramientas"><i class="fab fa-git-alt"></i>
+                  </span>
+                  <span class="icono__herramientas"><i class="fab fa-php"></i>
+                  </span>
+                  <span class="icono__herramientas"><i class="fas fa-database"></i>
+                  </span>
+               </div>
+             <h3 class="titulo__card">Extras</h3>             
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas nobis placeat nam quaerat corrupti veniam totam soluta minus? Quo labore sint, voluptas rem vel magni illo est aliquid consequuntur.
+             </p>        
+            </div>
+            
+          
+      </div>
     </section>
-    <section id="contacto">
-        <div class="container">contacto</div>
-
-    </section>
+    
     <footer>
+    <section id="contacto">
+       <div class="container__titulo">
+          <img class="titulo" src="images/contacto.png" alt="">
+       </div>
+      <div class="card">
+         <div class="card__media">
+           <img src="images/gorra.jpg" alt="Foto de perfil de Sebastian Simarro" />
+         </div>
+         
+         <div class="card__content">
+           <h2>Sebastian Simarro<small>Front End Developer <abbr title="Universidad Tecnológica Nacional"></abbr>(UTN)</small></h2>
+           <p>
+             Freelance pero siempre atento a nuevas startups y proyectos. Emprendedor.<br>  Dueño de <a class="plan" href="https://organizatuplan.com.ar/">Plan!</a>
+             Papá. Compañero de vida. En constante aprendizaje.
+           </p>
+           <blockquote>
+              <cite>
+                 "Al éxito y al fracaso, esos dos impostores, trátalos siempre con la misma indiferencia."
+              </cite> Rudyard Kipling.
+           </blockquote>
+           <a href="mailto:ssebastian210@gmail.com" class="button">Contactame</a>
+         </div>
+       </div>
+       
+    </section>
+   
 
     </footer>
-
 </body>
 
 </html>
