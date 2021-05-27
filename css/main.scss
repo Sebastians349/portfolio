@@ -363,7 +363,7 @@ header {
     }
   }
   .card__content {
-    padding: 2rem;
+    padding: 0 1rem 1.5rem;
   }
 
   .card h2 {
@@ -375,13 +375,12 @@ header {
 
   .card h2 small {
     display: block;
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 0.6em;
+    margin-top: 1rem;
   }
 
   .card p {
-    margin-top: 15px;
-    text-align: center;
+    margin-top: 1rem;
     .plan {
       color: map-get($colors, secondary);
       background-color: #fff;

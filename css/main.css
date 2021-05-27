@@ -447,7 +447,7 @@ header .botonera ul a:hover {
 }
 
 #contacto .card__content {
-  padding: 2rem;
+  padding: 0 1rem 1.5rem;
 }
 
 #contacto .card h2 {
@@ -459,13 +459,12 @@ header .botonera ul a:hover {
 
 #contacto .card h2 small {
   display: block;
-  font-size: 15px;
-  margin-top: 5px;
+  font-size: 0.6em;
+  margin-top: 1rem;
 }
 
 #contacto .card p {
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 1rem;
 }
 
 #contacto .card p .plan {
