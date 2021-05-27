@@ -394,6 +394,9 @@ header .botonera ul a:hover {
           align-items: center;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  /* a:hover {
+    background-color: map-get($colors, primary--tint2--complementary);
+  } */
 }
 
 #contacto .container__titulo img {
@@ -482,10 +485,6 @@ header .botonera ul a:hover {
   text-transform: uppercase;
   border-radius: 0.5em;
   margin-top: 1em;
-}
-
-#contacto a:hover {
-  background-color: #635a3b;
 }
 
 @media only screen and (max-width: 499px) {

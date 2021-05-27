@@ -60,5 +60,19 @@ gsap.from('.card__herramientas', {
 
 },"-=1.5"); 
 
+// CONTACTO
 
+/* gsap.from('.button', {
+    y:30,
+    duration:1,
+    ease: "Bounce.easeOut.config(1,0.3)"
+},"-=2"); */
 
+gsap.from('.button', { 
+    scrollTrigger:{
+        trigger: '.button',
+    },
+    duration: 2.5, 
+    ease: "elastic.out(1,0.2)", 
+    x:-100,
+});
