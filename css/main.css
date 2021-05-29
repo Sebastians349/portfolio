@@ -184,7 +184,7 @@ header .botonera ul a:hover {
 
 #proyectos img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 #proyectos .fondo__proyectos {
@@ -282,9 +282,8 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  /*       align-items: stretch;
+ */
 }
 
 #proyectos .container__proyectos .container__img .img__proyectos {
