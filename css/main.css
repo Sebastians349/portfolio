@@ -364,6 +364,12 @@ header .botonera ul a:hover {
   color: #200b3c;
 }
 
+#herramientas .container__herramientas .card__herramientas .container__iconos img {
+  width: 3rem;
+  vertical-align: bottom;
+  margin-bottom: 0.7rem;
+}
+
 #herramientas .container__herramientas .card__herramientas h3 {
   margin-top: 1rem;
   font-size: 1.5rem;

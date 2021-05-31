@@ -292,6 +292,11 @@ header {
         margin-bottom: 0.5rem;
         font-size: 3rem;
         color: map-get($colors, analog--2);
+        img {
+          width: 3rem;
+          vertical-align: bottom;
+          margin-bottom: 0.7rem;
+        }
       }
       h3 {
         margin-top: 1rem;
