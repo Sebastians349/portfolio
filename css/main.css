@@ -275,6 +275,7 @@ header .botonera ul a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 9rem;
   /*       align-items: stretch;
  */
 }
