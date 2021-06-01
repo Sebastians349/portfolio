@@ -250,7 +250,8 @@ header .botonera ul a:hover {
 }
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
-  margin: 1rem 0 0;
+  /*         padding: 0.5rem 0 0;
+ */
   color: #2f1057;
   text-transform: uppercase;
 }
@@ -408,6 +409,7 @@ header .botonera ul a:hover {
 
 #contacto .card {
   width: 100%;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +489,9 @@ header .botonera ul a:hover {
 }
 
 @media only screen and (max-width: 499px) {
-  #fondo,
-  .fondo__proyectos,
+  /*   #fondo,
+ 
+  .fondo__proyectos,*/
   .fondo__herramientas {
     display: none !important;
   }

@@ -120,7 +120,7 @@ header {
   display: none;
 }
 
-/////////////////// MAIN ///////////////
+/////////////////// MAIN #principal ///////////////
 
 .principal {
   height: 100vh;
@@ -209,7 +209,8 @@ header {
       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 6px;
       .titulo__proyecto {
-        margin: 1rem 0 0;
+        /*         padding: 0.5rem 0 0;
+ */
         color: map-get($colors, analog--2-tint);
         text-transform: uppercase;
       }
@@ -336,6 +337,7 @@ header {
 
   .card {
     width: 100%;
+    margin-bottom: 1rem;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -406,8 +408,9 @@ header {
 
 //////////////////////////// BREAKPOINTS  ///////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 499px) {
-  #fondo,
-  .fondo__proyectos,
+  /*   #fondo,
+ 
+  .fondo__proyectos,*/
   .fondo__herramientas {
     display: none !important;
   }
