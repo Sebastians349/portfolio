@@ -5,10 +5,10 @@ let tl= gsap.timeline();
 
 
 tl.from('.container__titulo',{
-    y: '-50%',
+    y: '-100%',
     opacity:0,
     duration: 2,
-    ease: "power4.out"
+    ease: "power1.out"
 });
 
 tl.from('.logo_hero',{
@@ -44,7 +44,6 @@ gsap.from('.anim1',{
     stagger:.05,
     duration:.5,
     ease: "power1.easeOut"
-
 },"-=1.5"); */
 
 // #HERRAMIENTAS 
@@ -77,7 +76,7 @@ gsap.from('.button', {
     x:-100,
 });
 
-////////// script para animacion tipeo ///////
+////////// snippet para animacion tipeo a maquina ///////
 
 let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -129,7 +128,7 @@ let TxtRotate = function(el, toRotate, period) {
         new TxtRotate(elements[i], JSON.parse(toRotate), period);
       }
     }
-    // INJECT CSS
+    // INJECT CSS 
     let css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
