@@ -180,11 +180,11 @@ header .botonera ul a:hover {
 #proyectos {
   width: 100%;
   height: auto;
-}
-
-#proyectos img {
-  max-width: 100%;
-  height: 100%;
+  /* img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+ */
 }
 
 #proyectos .fondo__proyectos {
@@ -231,7 +231,7 @@ header .botonera ul a:hover {
 }
 
 #proyectos .container__proyectos .container__txt {
-  width: 20rem;
+  width: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,10 +243,15 @@ header .botonera ul a:hover {
   line-height: 1.4;
   padding: 1rem;
   margin: 1rem;
-  background: #ffffff;
+  background: #fafafa;
   -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  /*  p {
+        position: relative;
+        z-index: 1;
+        border-radius: 3px;
+      } */
 }
 
 #proyectos .container__proyectos .container__txt .titulo__proyecto {
@@ -262,30 +267,26 @@ header .botonera ul a:hover {
   font-weight: bold;
 }
 
-#proyectos .container__proyectos .container__txt p {
+#proyectos .container__proyectos .container__img {
   position: relative;
   z-index: 1;
-  border-radius: 3px;
-}
-
-#proyectos .container__proyectos .container__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 9rem;
-  /*       align-items: stretch;
- */
+  right: -2rem;
+  bottom: 1.5rem;
 }
 
 #proyectos .container__proyectos .container__img .img__proyectos {
-  width: 16.5rem;
+  width: 14.5rem;
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+#proyectos .container__proyectos .container__img .img__proyectos img {
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 #herramientas {
@@ -584,7 +585,12 @@ header .botonera ul a:hover {
     margin-top: 5rem;
     margin-bottom: 3rem;
   }
-  #proyectos .container__titulo .titulo {
+  #proyectos .container__proyectos .container__img {
+    position: relative;
+    top: 2rem;
+    right: 3.5rem;
+  }
+  #proyectos .container__proyectos .container__titulo .titulo {
     width: 17rem;
   }
   #herramientas {
@@ -743,6 +749,12 @@ header .botonera ul a:hover {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  #proyectos .container__proyectos .container__img {
+    position: relative;
+    z-index: 1;
+    right: 1.5rem;
+    bottom: -1.5rem;
+  }
   #proyectos .container__proyectos .container__txt {
     width: 50%;
   }
@@ -859,6 +871,12 @@ header .botonera ul a:hover {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  #proyectos .container__proyectos .container__img {
+    position: relative;
+    z-index: 1;
+    right: 7rem;
+    bottom: -1.5rem;
+  }
   #herramientas .container__herramientas {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -909,25 +927,21 @@ header .botonera ul a:hover {
   }
   #proyectos {
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse;
-            flex-flow: row-reverse;
+    /*  display: flex;
+    justify-content: space-between;
+    flex-flow: column-reverse; */
   }
   #proyectos .container__titulo {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     margin-right: 5rem;
   }
   #proyectos .container__titulo .titulo {
     width: 20rem;
+  }
+  #proyectos .container__proyectos .container__img {
+    position: relative;
+    z-index: 1;
+    right: 9rem;
+    bottom: -3.5rem;
   }
   #proyectos .container__proyectos .container__txt {
     width: 50%;
@@ -988,7 +1002,9 @@ header .botonera ul a:hover {
   #proyectos .container__proyectos {
     width: 100%;
   }
-  /*  #herramientas {
-  } */
+  #proyectos .container__proyectos .container__img {
+    right: 12.5rem;
+    bottom: -5.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
