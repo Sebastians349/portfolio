@@ -86,7 +86,7 @@ gsap.from(".button", {
   x: -100,
 });
 
-////////// snippet para animacion tipeo a maquina ///////
+////////// snippet para animacion tipeo a maquina FIX mejorar perfomance haciendolo solo en CSS///////
 
 let TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
