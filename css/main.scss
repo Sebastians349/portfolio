@@ -163,11 +163,11 @@ header {
   width: 100%;
   height: auto;
 
-  img {
+  /* img {
     max-width: 100%;
-    height: 100%;
+    max-height: 100%;
   }
-
+ */
   .fondo__proyectos {
     clip-path: polygon(35% 50%, 0 0, 0 100%);
     background-color: map-get($colors, analog--1-shade);
@@ -201,14 +201,15 @@ header {
     flex-flow: row wrap;
 
     .container__txt {
-      width: 20rem;
+      width: 15rem;
+      height: auto;
       display: flex;
       flex-direction: column;
       text-align: justify;
       line-height: 1.4;
       padding: 1rem;
       margin: 1rem;
-      background: #ffffff;
+      background: #fafafa;
       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 6px;
       .titulo__proyecto {
@@ -223,23 +224,21 @@ header {
         font-weight: bold;
       }
       p {
-        position: relative;
-        z-index: 1;
-        border-radius: 3px;
+        width: 100%;
       }
     }
 
     .container__img {
-      display: flex;
-      justify-content: center;
-      height: 9rem;
-      /*       align-items: stretch;
- */
+      height: auto;
+
       .img__proyectos {
-        width: 16.5rem;
+        width: 15rem;
+        height: 8rem;
+
         text-align: center;
         border-radius: 3px;
         box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
       }
     }
   }
@@ -479,17 +478,19 @@ header {
   #proyectos {
     height: auto;
     margin-bottom: 5rem;
+
     .fondo__proyectos {
       margin-top: 5rem;
       margin-bottom: 3rem;
     }
-    .container__titulo {
-      .titulo {
-        width: 17rem;
+    .container__proyectos {
+      .container__titulo {
+        .titulo {
+          width: 17rem;
+        }
       }
     }
   }
-
   #herramientas {
     /* .fondo__herramientas {
       height: 100vh;
@@ -603,6 +604,7 @@ header {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+
       .container__txt {
         width: 50%;
         p {
@@ -763,11 +765,10 @@ header {
   }
   #proyectos {
     height: 100vh;
-    display: flex;
+    /*  display: flex;
     justify-content: space-between;
-    flex-flow: row-reverse;
+    flex-flow: column-reverse; */
     .container__titulo {
-      align-self: center;
       margin-right: 5rem;
       .titulo {
         width: 20rem;
@@ -799,9 +800,6 @@ header {
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 1em 2em 1em;
-    /*  a {
-      margin-left: 05rem;
-    } */
   }
   .redes {
     padding: 2em 6em 2em 4em;
@@ -835,6 +833,4 @@ header {
       width: 100%;
     }
   }
-  /*  #herramientas {
-  } */
 } // **********fin media 1550px *******
