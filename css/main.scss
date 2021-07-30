@@ -188,13 +188,11 @@ header {
       /*  background: #fafafa;
       box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
       border-radius: 6px;
-      padding: 0.5rem; */
+      padding: 0.5rem; 
+       */
     }
   }
-  // .hover_agranda:hover {
-  //   transform: scale(1.05);
-  //   transition: 0.3s ease-in-out;
-  // }
+
   .container__proyectos {
     width: 100%;
     display: flex;
@@ -216,8 +214,6 @@ header {
       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 6px;
       .titulo__proyecto {
-        /*         padding: 0.5rem 0 0;
- */
         color: map-get($colors, analog--2-tint);
         text-transform: uppercase;
       }
@@ -233,15 +229,19 @@ header {
 
     .container__img {
       height: auto;
+    }
+    .agranda:hover {
+      transform: scale(0.85);
+      transition: 0.3s ease-in-out;
+    }
 
-      .img__proyectos {
-        width: 15rem;
-        height: 8rem;
-        text-align: center;
-        border-radius: 3px;
-        box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-        object-fit: cover;
-      }
+    .img__proyectos {
+      width: 15rem;
+      height: 8rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
     }
   }
 }
