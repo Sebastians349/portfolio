@@ -270,9 +270,9 @@ header .botonera ul a:hover {
   height: auto;
 }
 
-#proyectos .container__proyectos .container__img:hover {
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
+#proyectos .container__proyectos .container__img :hover {
+  -webkit-transform: scale(1.25) !important;
+          transform: scale(1.25) !important;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
