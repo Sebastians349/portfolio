@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
 
 $colors: (
   primary: #0b173d,
@@ -35,7 +35,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -188,7 +188,8 @@ header {
       /*  background: #fafafa;
       box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
       border-radius: 6px;
-      padding: 0.5rem; */
+      padding: 0.5rem; 
+       */
     }
   }
 
@@ -213,8 +214,6 @@ header {
       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 6px;
       .titulo__proyecto {
-        /*         padding: 0.5rem 0 0;
- */
         color: map-get($colors, analog--2-tint);
         text-transform: uppercase;
       }
@@ -230,16 +229,21 @@ header {
 
     .container__img {
       height: auto;
-
-      .img__proyectos {
-        width: 15rem;
-        height: 8rem;
-
-        text-align: center;
-        border-radius: 3px;
-        box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-        object-fit: cover;
+      :hover {
+        transform: scale(
+          1.25
+        ) !important; //mala practica pero es para hacer override del greensock FIX
+        transition: 0.3s ease-in-out;
       }
+    }
+
+    .img__proyectos {
+      width: 15rem;
+      height: 8rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
     }
   }
 }
