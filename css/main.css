@@ -942,6 +942,7 @@ header .botonera ul a:hover {
   }
   #contacto {
     height: 100vh;
+    margin-top: 6rem;
   }
 }
 
@@ -974,6 +975,10 @@ header .botonera ul a:hover {
   }
   #proyectos .container__proyectos {
     width: 100%;
+  }
+  #contacto {
+    height: 100vh;
+    margin-top: 6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
