@@ -259,8 +259,9 @@ header {
 //       :hover {
 //         transform: scale(
 //           1.25
-//         ) !important; //mala practica pero es para hacer override del greensock FIX
+//         ) !important; //mala practica pero es para hacer override del greensock
 //         transition: 0.3s ease-in-out;
+// FIXCHECKBUGBREAKPOINT LINDOS COLORES NO?
 //       }
 //     }
 
@@ -279,6 +280,7 @@ header {
 #herramientas {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
 
   img {
     max-width: 100%;
@@ -795,7 +797,7 @@ header {
     }
   }
   #proyectos {
-    height: 100vh;
+    height: auto;
     /*  display: flex;
     justify-content: space-between;
     flex-flow: column-reverse; */

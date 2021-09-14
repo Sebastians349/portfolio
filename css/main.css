@@ -212,6 +212,7 @@ header .botonera ul a:hover {
 #herramientas {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
 }
 
 #herramientas img {
@@ -829,7 +830,7 @@ header .botonera ul a:hover {
     text-align: left;
   }
   #proyectos {
-    height: 100vh;
+    height: auto;
     /*  display: flex;
     justify-content: space-between;
     flex-flow: column-reverse; */
