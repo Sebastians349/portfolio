@@ -162,13 +162,30 @@ header {
 #proyectos {
   width: 100%;
   height: auto;
+  margin-top: 5rem;
+  .fondo__proyectos {
+    clip-path: polygon(35% 50%, 0 0, 0 100%);
+    background-color: map-get($colors, analog--1-shade);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
 
-  h2 {
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+  .container__titulo {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
+    .titulo {
+      margin-top: 2rem;
+      width: 15rem;
+      /*  background: #fafafa;
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          border-radius: 6px;
+          padding: 0.5rem;
+           */
+    }
   }
   .projects-grid {
     display: grid;

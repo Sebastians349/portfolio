@@ -180,14 +180,33 @@ header .botonera ul a:hover {
 #proyectos {
   width: 100%;
   height: auto;
+  margin-top: 5rem;
 }
 
-#proyectos h2 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+#proyectos .fondo__proyectos {
+  -webkit-clip-path: polygon(35% 50%, 0 0, 0 100%);
+          clip-path: polygon(35% 50%, 0 0, 0 100%);
+  background-color: #3c5f63;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#proyectos .container__titulo {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+#proyectos .container__titulo .titulo {
+  margin-top: 2rem;
+  width: 15rem;
+  /*  background: #fafafa;
+          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+          border-radius: 6px;
+          padding: 0.5rem;
+           */
 }
 
 #proyectos .projects-grid {
