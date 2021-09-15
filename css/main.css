@@ -15,7 +15,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -197,16 +197,7 @@ header .botonera ul a:hover {
   position: relative;
   z-index: 1;
   text-align: center;
-}
-
-#proyectos .container__titulo .titulo {
-  margin-top: 2rem;
-  width: 15rem;
-  /*  background: #fafafa;
-          box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-          border-radius: 6px;
-          padding: 0.5rem;
-           */
+  margin-bottom: 5rem;
 }
 
 #proyectos .projects-grid {
@@ -215,10 +206,22 @@ header .botonera ul a:hover {
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 100%;
+  width: 95%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
+}
+
+#proyectos .projects-grid .container__txt {
+  background: #fafafa;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 1em;
+  position: relative;
+  top: -2rem;
+  right: -1rem;
+  z-index: 1;
 }
 
 #proyectos .projects-grid .project-image {
