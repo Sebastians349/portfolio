@@ -204,6 +204,13 @@ header {
       height: calc(100% - 6.8rem);
       width: 100%;
       object-fit: cover;
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      // FIX NO ANDA OJO EL GREENSOCK
+      :hover {
+        transform: scale(1.25) !important;
+        transition: 0.3s ease-in-out;
+      }
     }
   }
 }
@@ -282,7 +289,7 @@ header {
 //           1.25
 //         ) !important; //mala practica pero es para hacer override del greensock
 //         transition: 0.3s ease-in-out;
-// FIXCHECKBUGBREAKPOINT LINDOS COLORES NO?
+// FIXCHECKBUGBREAKPOINT LINDOS COLORES NO? podes ver los settings que tengo asignados en el json...
 //       }
 //     }
 
