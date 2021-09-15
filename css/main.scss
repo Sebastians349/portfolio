@@ -177,6 +177,9 @@ header {
     z-index: 1;
     text-align: center;
     margin-bottom: 5rem;
+    .titulo {
+      width: 15rem;
+    }
   }
   .projects-grid {
     display: grid;

@@ -200,6 +200,10 @@ header .botonera ul a:hover {
   margin-bottom: 5rem;
 }
 
+#proyectos .container__titulo .titulo {
+  width: 15rem;
+}
+
 #proyectos .projects-grid {
   display: -ms-grid;
   display: grid;
