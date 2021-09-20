@@ -180,11 +180,7 @@ header .botonera ul a:hover {
 #proyectos {
   width: 100%;
   height: auto;
-  /* img {
-    max-width: 100%;
-    max-height: 100%;
-  }
- */
+  margin-top: 5rem;
 }
 
 #proyectos .fondo__proyectos {
@@ -201,96 +197,68 @@ header .botonera ul a:hover {
   position: relative;
   z-index: 1;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 #proyectos .container__titulo .titulo {
-  margin-top: 2rem;
   width: 15rem;
-  /*  background: #fafafa;
-      box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-      border-radius: 6px;
-      padding: 0.5rem; 
-       */
 }
 
-#proyectos .container__proyectos {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+#proyectos .projects-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
-#proyectos .container__proyectos .container__txt {
-  width: 15rem;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: justify;
-  line-height: 1.4;
-  padding: 1rem;
-  margin: 1rem;
-  background: #fafafa;
-  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+#proyectos .projects-grid .container__txt {
+  background: #ecefef;
+  -webkit-box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 1em;
+  position: relative;
+  top: -5rem;
+  right: -1rem;
+  z-index: 1;
 }
 
-#proyectos .container__proyectos .container__txt .titulo__proyecto {
+#proyectos .projects-grid .container__txt h3 {
   color: #2f1057;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
-#proyectos .container__proyectos .container__txt .nombre__web {
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
+#proyectos .projects-grid .container__txt h4 {
+  font-weight: 600;
 }
 
-#proyectos .container__proyectos .container__txt p {
+#proyectos .projects-grid .project-image {
+  height: calc(100% - 6.8rem);
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
-#proyectos .container__proyectos .container__img {
-  height: auto;
-}
-
-#proyectos .container__proyectos .container__img :hover {
+#proyectos .projects-grid .project-image :hover {
   -webkit-transform: scale(1.25) !important;
           transform: scale(1.25) !important;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-#proyectos .container__proyectos .img__proyectos {
-  width: 15rem;
-  height: 8rem;
-  text-align: center;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 #herramientas {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
 }
 
 #herramientas img {
@@ -750,7 +718,7 @@ header .botonera ul a:hover {
     background: none;
   }
   #herramientas {
-    height: 100%;
+    height: auto;
     /*  .fondo__herramientas {
       height: 100vh;
     } */
@@ -908,7 +876,7 @@ header .botonera ul a:hover {
     text-align: left;
   }
   #proyectos {
-    height: 100vh;
+    height: auto;
     /*  display: flex;
     justify-content: space-between;
     flex-flow: column-reverse; */

@@ -162,12 +162,7 @@ header {
 #proyectos {
   width: 100%;
   height: auto;
-
-  /* img {
-    max-width: 100%;
-    max-height: 100%;
-  }
- */
+  margin-top: 5rem;
   .fondo__proyectos {
     clip-path: polygon(35% 50%, 0 0, 0 100%);
     background-color: map-get($colors, analog--1-shade);
@@ -181,69 +176,50 @@ header {
     position: relative;
     z-index: 1;
     text-align: center;
-
+    margin-bottom: 5rem;
     .titulo {
-      margin-top: 2rem;
       width: 15rem;
-      /*  background: #fafafa;
-      box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-      border-radius: 6px;
-      padding: 0.5rem; 
-       */
     }
   }
-
-  .container__proyectos {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2rem;
-    flex-flow: row wrap;
-
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
     .container__txt {
-      width: 15rem;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      text-align: justify;
-      line-height: 1.4;
-      padding: 1rem;
-      margin: 1rem;
-      background: #fafafa;
-      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-      border-radius: 6px;
-      .titulo__proyecto {
+      background: #ecefef; //se lo di manual el color y que?
+      box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      padding: 1em;
+      position: relative;
+      top: -5rem;
+      right: -1rem;
+      z-index: 1;
+      h3 {
         color: map-get($colors, analog--2-tint);
+        font-weight: bolder;
         text-transform: uppercase;
+        // si te preguntas para que mapeo y un callback??? al pedo. No mentira... es para hacer una function en algun momento.
       }
-      .nombre__web {
-        position: relative;
-        z-index: 1;
-        font-weight: bold;
-      }
-      p {
-        width: 100%;
+      h4 {
+        font-weight: 600;
       }
     }
 
-    .container__img {
-      height: auto;
+    .project-image {
+      height: calc(100% - 6.8rem);
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      // FIX NO ANDA OJO EL GREENSOCK
       :hover {
-        transform: scale(
-          1.25
-        ) !important; //mala practica pero es para hacer override del greensock FIX
+        transform: scale(1.25) !important;
         transition: 0.3s ease-in-out;
       }
-    }
-
-    .img__proyectos {
-      width: 15rem;
-      height: 8rem;
-      text-align: center;
-      border-radius: 3px;
-      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-      object-fit: cover;
     }
   }
 }
@@ -252,6 +228,7 @@ header {
 #herramientas {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
 
   img {
     max-width: 100%;
@@ -618,7 +595,7 @@ header {
     }
   }
   #herramientas {
-    height: 100%;
+    height: auto;
 
     /*  .fondo__herramientas {
       height: 100vh;
@@ -768,7 +745,7 @@ header {
     }
   }
   #proyectos {
-    height: 100vh;
+    height: auto;
     /*  display: flex;
     justify-content: space-between;
     flex-flow: column-reverse; */
