@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
 
 $colors: (
   primary: #0b173d,
@@ -35,7 +35,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -207,7 +207,7 @@ header {
     }
 
     .project-image {
-      height: calc(100% - 13.8rem);
+      height: calc(100% - 6.8rem);
       width: 100%;
       object-fit: cover;
       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
