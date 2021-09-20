@@ -190,16 +190,19 @@ header {
     margin: 0 auto;
     margin-bottom: 6rem;
     .container__txt {
-      background: #fafafa;
-      box-shadow: 3px 7px 30px -10px rgba(0, 0, 0, 0.2);
+      background: #ecefef; //se lo di manual el color y que?
+      box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       padding: 1em;
       position: relative;
-      top: -2rem;
+      top: -5rem;
       right: -1rem;
       z-index: 1;
       h3 {
-        color: map-get($colors, analog--1-shade);
+        color: map-get($colors, analog--2-tint);
+        font-weight: bolder;
+        text-transform: uppercase;
+        // si te preguntas para que mapeo y un callback??? al pedo. No mentira... es para hacer una function en algun momento.
       }
       h4 {
         font-weight: 600;
@@ -220,95 +223,6 @@ header {
     }
   }
 }
-// #proyectos {
-//   width: 100%;
-//   height: auto;
-
-//   /* img {
-//     max-width: 100%;
-//     max-height: 100%;
-//   }
-//  */
-//   .fondo__proyectos {
-//     clip-path: polygon(35% 50%, 0 0, 0 100%);
-//     background-color: map-get($colors, analog--1-shade);
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     z-index: -1;
-//   }
-
-//   .container__titulo {
-//     position: relative;
-//     z-index: 1;
-//     text-align: center;
-
-//     .titulo {
-//       margin-top: 2rem;
-//       width: 15rem;
-//       /*  background: #fafafa;
-//       box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-//       border-radius: 6px;
-//       padding: 0.5rem;
-//        */
-//     }
-//   }
-
-//   .container__proyectos {
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     margin-top: 2rem;
-//     flex-flow: row wrap;
-
-//     .container__txt {
-//       width: 15rem;
-//       height: auto;
-//       display: flex;
-//       flex-direction: column;
-//       text-align: justify;
-//       line-height: 1.4;
-//       padding: 1rem;
-//       margin: 1rem;
-//       background: #fafafa;
-//       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-//       border-radius: 6px;
-//       .titulo__proyecto {
-//         color: map-get($colors, analog--2-tint);
-//         text-transform: uppercase;
-//       }
-//       .nombre__web {
-//         position: relative;
-//         z-index: 1;
-//         font-weight: bold;
-//       }
-//       p {
-//         width: 100%;
-//       }
-//     }
-
-//     .container__img {
-//       height: auto;
-//       :hover {
-//         transform: scale(
-//           1.25
-//         ) !important; //mala practica pero es para hacer override del greensock
-//         transition: 0.3s ease-in-out;
-// FIXCHECKBUGBREAKPOINT LINDOS COLORES NO? podes ver los settings que tengo asignados en el json...
-//       }
-//     }
-
-//     .img__proyectos {
-//       width: 15rem;
-//       height: 8rem;
-//       text-align: center;
-//       border-radius: 3px;
-//       box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-//       object-fit: cover;
-//     }
-//   }
-// }
 
 /////////////////////// HERRAMIENTAS SKILLS/////////////////////
 #herramientas {

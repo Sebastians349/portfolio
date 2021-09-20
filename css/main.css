@@ -217,19 +217,21 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt {
-  background: #fafafa;
-  -webkit-box-shadow: 3px 7px 30px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 7px 30px -10px rgba(0, 0, 0, 0.2);
+  background: #ecefef;
+  -webkit-box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   padding: 1em;
   position: relative;
-  top: -2rem;
+  top: -5rem;
   right: -1rem;
   z-index: 1;
 }
 
 #proyectos .projects-grid .container__txt h3 {
-  color: #3c5f63;
+  color: #2f1057;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 #proyectos .projects-grid .container__txt h4 {
