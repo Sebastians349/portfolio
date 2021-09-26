@@ -3,47 +3,47 @@ let tl = gsap.timeline();
 
 // #principal
 
-tl.from(".container__titulo", {
-  y: "-100%",
+tl.from('.container__titulo', {
+  y: '-100%',
   opacity: 0,
   duration: 2,
-  ease: "power1.out",
+  ease: 'power1.out',
 });
 
 tl.from(
-  ".logo_hero",
+  '.logo_hero',
   {
     y: 50,
     opacity: 0,
-    ease: "power2.easeOut",
+    ease: 'power2.easeOut',
     duration: 1,
   },
-  "-=1.5"
+  '-=1.5'
 );
 
-gsap.from(".cls-2", {
+gsap.from('.cls-2', {
   stagger: 0.3,
   scale: 0.1,
   duration: 1,
-  ease: "back.out(1.7)",
+  ease: 'back.out(1.7)',
 });
 
 //#proyectos
 
 gsap.from(
-  ".anim1",
+  '.anim1',
   {
     scrollTrigger: {
-      trigger: ".anim1",
-      start: "top bottom",
+      trigger: '.anim1',
+      start: 'top bottom',
     },
-    x: "-50%",
+    x: '-50%',
     opacity: 0,
     stagger: 0.2,
-    duration: 2,
-    ease: "power1.easeOut",
+    duration: 1,
+    ease: 'power1.easeOut',
   },
-  "-=1"
+  '-=1'
 );
 
 /* tl.from('.anim1', {
@@ -55,18 +55,18 @@ gsap.from(
 
 // #HERRAMIENTAS
 gsap.from(
-  ".card__herramientas",
+  '.card__herramientas',
   {
     scrollTrigger: {
-      trigger: ".card__herramientas",
-      start: "top bottom",
+      trigger: '.card__herramientas',
+      start: 'top bottom',
     },
     y: 100,
     stagger: 0.3,
     duration: 0.6,
-    ease: "power1.easeOut",
+    ease: 'power1.easeOut',
   },
-  "-=1.5"
+  '-=1.5'
 );
 
 // CONTACTO
@@ -77,12 +77,12 @@ gsap.from(
     ease: "Bounce.easeOut.config(1,0.3)"
 },"-=2"); */
 
-gsap.from(".button", {
+gsap.from('.button', {
   scrollTrigger: {
-    trigger: ".button",
+    trigger: '.button',
   },
   duration: 2.5,
-  ease: "elastic.out(1,0.2)",
+  ease: 'elastic.out(1,0.2)',
   x: -100,
 });
 
@@ -93,7 +93,7 @@ let TxtRotate = function (el, toRotate, period) {
   this.el = el;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 500;
-  this.txt = "";
+  this.txt = '';
   this.tick();
   this.isDeleting = false;
 };
@@ -108,7 +108,7 @@ TxtRotate.prototype.tick = function () {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   let that = this;
   let delta = 300 - Math.random() * 100;
@@ -120,7 +120,7 @@ TxtRotate.prototype.tick = function () {
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
+  } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
     delta = 500;
@@ -132,17 +132,17 @@ TxtRotate.prototype.tick = function () {
 };
 
 window.onload = function () {
-  let elements = document.getElementsByClassName("txt-rotate");
+  let elements = document.getElementsByClassName('txt-rotate');
   for (let i = 0; i < elements.length; i++) {
-    let toRotate = elements[i].getAttribute("data-rotate");
-    let period = elements[i].getAttribute("data-period");
+    let toRotate = elements[i].getAttribute('data-rotate');
+    let period = elements[i].getAttribute('data-period');
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
   // INJECT CSS
-  let css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  let css = document.createElement('style');
+  css.type = 'text/css';
+  css.innerHTML = '.txt-rotate > .wrap { border-right: 0.08em solid #666 }';
   document.body.appendChild(css);
 };
