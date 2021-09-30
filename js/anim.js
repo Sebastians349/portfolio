@@ -34,16 +34,15 @@ gsap.from(
   '.anim1',
   {
     scrollTrigger: {
-      trigger: '.anim1',
-      start: 'top bottom',
+      trigger: '.card__herramientas',
+      start: 'center center',
     },
-    x: '-50%',
-    opacity: 0,
-    stagger: 0.2,
-    duration: 1,
+    y: 100,
+    stagger: 0.3,
+    duration: 0.6,
     ease: 'power1.easeOut',
   },
-  '-=1'
+  '-=1.5'
 );
 
 /* tl.from('.anim1', {
