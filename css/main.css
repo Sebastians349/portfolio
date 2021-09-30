@@ -207,8 +207,8 @@ header .botonera ul a:hover {
 #proyectos .projects-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (minmax(540px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
   grid-gap: 4rem;
   width: 95%;
   max-width: 1280px;
@@ -217,21 +217,23 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt {
-  background: #ecefef;
-  -webkit-box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+  background: #fafafa;
+  -webkit-box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   padding: 1em;
   position: relative;
   top: -5rem;
   right: -1rem;
   z-index: 1;
+  height: 100px;
 }
 
 #proyectos .projects-grid .container__txt h3 {
   color: #2f1057;
-  font-weight: bolder;
+  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 #proyectos .projects-grid .container__txt h4 {
