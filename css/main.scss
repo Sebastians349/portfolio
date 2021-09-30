@@ -183,25 +183,27 @@ header {
   }
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
     grid-gap: 4rem;
     width: 95%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
     .container__txt {
-      background: #ecefef; //se lo di manual el color y que?
-      box-shadow: 3px 0px 3px -10px rgba(0, 0, 0, 0.2);
+      background: #fafafa; //se lo di manual el color y que?
+      box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       padding: 1em;
       position: relative;
       top: -5rem;
       right: -1rem;
       z-index: 1;
+      height: 100px;
       h3 {
         color: map-get($colors, analog--2-tint);
-        font-weight: bolder;
+        font-weight: bold;
         text-transform: uppercase;
+        letter-spacing: 0.1em;
         // si te preguntas para que mapeo y un callback??? al pedo. No mentira... es para hacer una function en algun momento.
       }
       h4 {
