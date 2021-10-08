@@ -207,8 +207,8 @@ header .botonera ul a:hover {
 #proyectos .projects-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(540px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 95%;
   max-width: 1280px;
@@ -949,6 +949,16 @@ header .botonera ul a:hover {
   #contacto {
     height: 100vh;
     margin-top: 6rem;
+  }
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+  .projects-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
