@@ -164,7 +164,8 @@ header {
   height: auto;
   margin-top: 5rem;
   .fondo__proyectos {
-    clip-path: polygon(35% 50%, 0 0, 0 100%);
+    clip-path: inset(0 53% 0 3% round 3% 3% 3% 3%);
+    margin-top: 10rem;
     background-color: map-get($colors, analog--1-shade);
     width: 100%;
     height: 100%;
