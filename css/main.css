@@ -80,6 +80,72 @@ header ul {
           flex-direction: column;
 }
 
+header ul .theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul .theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+header ul .theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+header ul .theme-switch input {
+  display: none;
+}
+
+header ul .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header ul .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 26px;
+}
+
+header ul input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+header ul input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+header ul .slider.round {
+  border-radius: 34px;
+}
+
+header ul .slider.round:before {
+  border-radius: 50%;
+}
+
 header a {
   text-align: center;
 }
