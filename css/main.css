@@ -217,11 +217,11 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt {
-  background: #bababa;
+  background: #4ef4ee;
   -webkit-box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  padding: 2em;
+  padding: 1.5em;
   position: relative;
   top: -5rem;
   right: -1rem;
@@ -230,7 +230,6 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt h3 {
-  color: #2f1057;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;

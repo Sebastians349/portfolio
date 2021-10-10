@@ -190,17 +190,16 @@ header {
     margin: 0 auto;
     margin-bottom: 6rem;
     .container__txt {
-      background: #bababa;
+      background: #4ef4ee;
       box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
-      padding: 2em;
+      padding: 1.5em;
       position: relative;
       top: -5rem;
       right: -1rem;
       z-index: 1;
       height: 100px;
       h3 {
-        color: map-get($colors, analog--2-tint);
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.1em;
