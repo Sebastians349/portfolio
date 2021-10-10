@@ -89,11 +89,6 @@ header ul .theme-switch-wrapper {
           align-items: center;
 }
 
-header ul .theme-switch-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
-}
-
 header ul .theme-switch {
   display: inline-block;
   height: 34px;
