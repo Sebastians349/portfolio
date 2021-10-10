@@ -80,6 +80,72 @@ header ul {
           flex-direction: column;
 }
 
+header ul .theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul .theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+header ul .theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+header ul .theme-switch input {
+  display: none;
+}
+
+header ul .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header ul .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 26px;
+}
+
+header ul input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+header ul input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+header ul .slider.round {
+  border-radius: 34px;
+}
+
+header ul .slider.round:before {
+  border-radius: 50%;
+}
+
 header a {
   text-align: center;
 }
@@ -184,8 +250,9 @@ header .botonera ul a:hover {
 }
 
 #proyectos .fondo__proyectos {
-  -webkit-clip-path: polygon(35% 50%, 0 0, 0 100%);
-          clip-path: polygon(35% 50%, 0 0, 0 100%);
+  -webkit-clip-path: inset(0 53% 0 3% round 3% 3% 3% 3%);
+          clip-path: inset(0 53% 0 3% round 3% 3% 3% 3%);
+  margin-top: 10rem;
   background-color: #3c5f63;
   width: 100%;
   height: 100%;
@@ -207,8 +274,8 @@ header .botonera ul a:hover {
 #proyectos .projects-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(540px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 95%;
   max-width: 1280px;
@@ -217,11 +284,11 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt {
-  background: #fafafa;
+  background: #4ef4ee;
   -webkit-box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  padding: 1em;
+  padding: 1.5em;
   position: relative;
   top: -5rem;
   right: -1rem;
@@ -230,7 +297,6 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt h3 {
-  color: #2f1057;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -949,6 +1015,16 @@ header .botonera ul a:hover {
   #contacto {
     height: 100vh;
     margin-top: 6rem;
+  }
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+  .projects-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
