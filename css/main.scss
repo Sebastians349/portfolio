@@ -32,6 +32,12 @@ $colors: (
 html {
   scroll-behavior: smooth;
 }
+// no es buena práctica pero los dots feos que aparecen abajo
+abbr[title] {
+  border-bottom: none !important;
+  // cursor: inherit !important;
+  text-decoration: none !important;
+}
 
 body {
   height: 100vh;

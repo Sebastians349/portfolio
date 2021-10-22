@@ -13,6 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+abbr[title] {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
 body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
