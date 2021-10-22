@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
 
 $colors: (
   primary: #0b173d,
@@ -32,10 +32,16 @@ $colors: (
 html {
   scroll-behavior: smooth;
 }
+// no es buena práctica pero los dots feos que aparecen abajo
+abbr[title] {
+  border-bottom: none !important;
+  // cursor: inherit !important;
+  text-decoration: none !important;
+}
 
 body {
   height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -115,7 +121,7 @@ header {
     .slider:before {
       background-color: #fff;
       bottom: 4px;
-      content: '';
+      content: "";
       height: 26px;
       left: 4px;
       position: absolute;
@@ -232,6 +238,7 @@ header {
     z-index: 1;
     text-align: center;
     margin-bottom: 5rem;
+    margin-top: 15rem;
     .titulo {
       width: 15rem;
     }
@@ -245,8 +252,8 @@ header {
     margin: 0 auto;
     margin-bottom: 6rem;
     .container__txt {
-      background: #4ef4ee;
-      box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
+      background: #fafafa;
+      box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
       border-radius: 3px;
       padding: 1.5em;
       position: relative;
@@ -268,7 +275,7 @@ header {
       height: calc(100% - 6.8rem);
       width: 100%;
       object-fit: cover;
-      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
       border-radius: 3px;
       // FIX NO ANDA OJO EL GREENSOCK
       :hover {
@@ -381,7 +388,7 @@ header {
     text-align: center;
     background: #ffffff;
     border-radius: 1em;
-    box-shadow: 0 7px 30px -10px rgba(9, 11, 12, 0.5);
+    box-shadow: 10px 10px 5px -8px rgba(60, 95, 99, 0.75);
   }
   .card__media {
     img {
@@ -393,7 +400,7 @@ header {
       border-radius: 50%;
       max-width: 125px;
       opacity: 1;
-      box-shadow: 3px 3px 10px rgb(22, 19, 19);
+      box-shadow: 10px 10px 5px -8px rgba(60, 95, 99, 0.75);
       border: 2px solid white;
       z-index: 1;
       transform: translate(-50%, 0);
