@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap");
 
 $colors: (
   primary: #0b173d,
@@ -35,7 +35,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -115,7 +115,7 @@ header {
     .slider:before {
       background-color: #fff;
       bottom: 4px;
-      content: '';
+      content: "";
       height: 26px;
       left: 4px;
       position: absolute;
@@ -232,6 +232,7 @@ header {
     z-index: 1;
     text-align: center;
     margin-bottom: 5rem;
+    margin-top: 15rem;
     .titulo {
       width: 15rem;
     }

@@ -15,7 +15,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: #fafafa;
   overflow-x: hidden;
 }
@@ -115,7 +115,7 @@ header ul .slider {
 header ul .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: '';
+  content: "";
   height: 26px;
   left: 4px;
   position: absolute;
@@ -260,6 +260,7 @@ header .botonera ul a:hover {
   z-index: 1;
   text-align: center;
   margin-bottom: 5rem;
+  margin-top: 15rem;
 }
 
 #proyectos .container__titulo .titulo {
