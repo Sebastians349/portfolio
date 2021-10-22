@@ -252,8 +252,8 @@ header {
     margin: 0 auto;
     margin-bottom: 6rem;
     .container__txt {
-      background: #4ef4ee;
-      box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
+      background: #fafafa;
+      box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
       border-radius: 3px;
       padding: 1.5em;
       position: relative;
@@ -275,7 +275,7 @@ header {
       height: calc(100% - 6.8rem);
       width: 100%;
       object-fit: cover;
-      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
       border-radius: 3px;
       // FIX NO ANDA OJO EL GREENSOCK
       :hover {

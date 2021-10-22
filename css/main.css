@@ -285,9 +285,9 @@ header .botonera ul a:hover {
 }
 
 #proyectos .projects-grid .container__txt {
-  background: #4ef4ee;
-  -webkit-box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 0px 30px -10px rgba(0, 0, 0, 0.2);
+  background: #fafafa;
+  -webkit-box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
+          box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
   border-radius: 3px;
   padding: 1.5em;
   position: relative;
@@ -312,8 +312,8 @@ header .botonera ul a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
+          box-shadow: 10px 10px 5px -11px rgba(60, 95, 99, 0.75);
   border-radius: 3px;
 }
 
