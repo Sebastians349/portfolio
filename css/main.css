@@ -295,16 +295,20 @@ header .botonera ul a:hover {
   right: -1rem;
   z-index: 1;
   height: 100px;
+  font-weight: 300;
 }
 
 #proyectos .projects-grid .container__txt h3 {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 #proyectos .projects-grid .container__txt h4 {
-  font-weight: 600;
+  font-weight: normal;
+}
+
+#proyectos .projects-grid .container__txt p {
+  font-weight: 300;
 }
 
 #proyectos .projects-grid .project-image {
